@@ -12,7 +12,8 @@ html {
 .topSect {
     /*background-color: mediumaquamarine;*/
     display: grid;
-    grid-template-columns: 1fr 1fr;/* Header and nav*/
+    grid-template-columns: 1fr 1fr;
+    /* Header and nav*/
     grid-auto-rows: 1fr;
     font-size: 100%;
     padding: 20px;
@@ -26,6 +27,7 @@ html {
     position: relative;
     top: 10px;
 }
+
 /*-------pgTitle section-----*/
 
 .pgTitle {
@@ -70,7 +72,7 @@ nav>ul {
     /*background-color: pink;*/
     display: flex;
     position: relative;
-    top:5px;
+    top: 5px;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
