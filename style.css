@@ -1,0 +1,114 @@
+html {
+    font-size: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*-------topSect section-----*/
+
+.topSect {
+    /*background-color: mediumaquamarine;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;/* Header and nav*/
+    grid-auto-rows: 1fr;
+    font-size: 100%;
+    padding: 20px;
+}
+
+.header {
+    height: 10vh;
+}
+
+.bigPics {
+    position: relative;
+    top: 10px;
+}
+/*-------pgTitle section-----*/
+
+.pgTitle {
+    /*background-color: red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8vh;
+}
+
+#pg_title>h1 {
+    /*background-color: yellow;*/
+    font-family: 'Open Sans';
+    font-size: 2rem;
+    font-weight: 200;
+    width: 90%;
+    text-align: start;
+}
+
+#pg_title>h1>a {
+    text-decoration: none;
+    color: black;
+}
+
+#pg_title>h1>a:visited {
+    color: black;
+}
+
+/*-------nav section--------*/
+
+nav {
+    display: flex;
+    /*background-color: yellow;*/
+    justify-content: center;
+    align-items: center;
+    margin-right: 8vh;
+
+}
+
+nav>ul {
+    width: 90%;
+    /*background-color: pink;*/
+    display: flex;
+    position: relative;
+    top:5px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+nav>ul>li {
+    list-style: none;
+}
+
+nav>ul>li>a {
+    color: black;
+    font-weight: 200;
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-family: 'Open Sans';
+
+}
+
+nav>ul>li>a:visited {
+    color: black;
+}
+
+/*-------index: image section-----*/
+
+.imgBox {
+    margin-top: 30px;
+    padding: 0;
+    width: 100vw;
+    /*background-color: turquoise;*/
+    display: flex;
+    justify-content: center;
+
+}
+
+#indexImg1 {
+
+    width: 90vw;
+    height: 76vh;
+    background: url(/images/indexImg1.jpg) right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
