@@ -31,26 +31,29 @@ html {
 /*-------pgTitle section-----*/
 
 .pgTitle {
+    top: 10px;
+
     /*background-color: red;*/
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 8vh;
+    margin-left: 3vh;
 }
 
 #pg_title>h1 {
     /*background-color: yellow;*/
     font-family: 'Open Sans';
-    font-size: 2rem;
-    font-weight: 200;
+    font-size: 1.8rem;
+    font-weight: 100;
     width: 90%;
     text-align: start;
 }
 
-#pg_title>h1>a {
-    text-decoration: none;
-    color: black;
+.txtSlct {
+    font-weight: 600;
+    cursor: default;
 }
+
 
 #pg_title>h1>a:visited {
     color: black;
@@ -63,7 +66,7 @@ nav {
     /*background-color: yellow;*/
     justify-content: center;
     align-items: center;
-    margin-right: 8vh;
+    margin-right: 3vh;
 
 }
 
@@ -83,7 +86,7 @@ nav>ul>li {
 
 nav>ul>li>a {
     color: black;
-    font-weight: 200;
+    font-weight: 500;
     font-size: 1.4rem;
     text-decoration: none;
     font-family: 'Open Sans';
@@ -97,20 +100,56 @@ nav>ul>li>a:visited {
 /*-------index: image section-----*/
 
 .imgBox {
-    margin-top: 30px;
-    padding: 0;
-    width: 100vw;
+    margin: 50px 50px 0px 50px;
+    /*width: 100vw;*/
     /*background-color: turquoise;*/
     display: flex;
+    height: 76vh;
     justify-content: center;
 
 }
 
-#indexImg1 {
+.indexImg1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
 
-    width: 90vw;
-    height: 76vh;
-    background: url(/images/indexImg1.jpg) right;
-    background-size: cover;
-    background-repeat: no-repeat;
+/*--------image gallery--------*/
+.gallery {
+    margin: 50px 50px 0px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 20vw;
+    grid-gap: 0px;
+
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*----------bio page---------*/
+
+.bioMate {
+    margin: 50px 85px 50px 85px;
+    display: block;
+    /*background-color: mediumaquamarine;*/
+    column-count: 2;
+    column-gap: 90px;
+
+}
+
+.bioMate>section {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9vw;
+    
+}
+
+.imgBio {
+    max-width: 80%;
+
 }
