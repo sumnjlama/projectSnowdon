@@ -16,27 +16,28 @@ html {
     display: none;
 }
 
-/*-------topSect section-----*/
+/*--------------------------------------topSect section-----------------------------------*/
 
 .topSect {
     /*background-color: mediumaquamarine;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;
     font-size: 100%;
     padding: 20px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
+
 .header {
-    height: 10vh;
+    height: 12vh;
 }
 
 .bigPics {
     position: relative;
-    top: 10px;
 }
 
-/*-------pgTitle section-----*/
+/*--------------------------------------pgTitle section-----------------------------------*/
 
 .pgTitle {
     top: 10px;
@@ -66,56 +67,84 @@ html {
     color: black;
 }
 
-/*-------nav section--------*/
+/*--------------------------------------nav section-----------------------------------*/
 
-nav {
-    display: flex;
-    /*background-color: yellow;*/
-    justify-content: center;
-    align-items: center;
-    margin-right: 3vh;
+@media (min-width: 1200px) {
+    nav {
+        display: flex;
+        /*background-color: yellow;*/
+        justify-content: center;
+        align-items: center;
+        margin-right: 3vh;
+    }
 
+    nav>ul {
+        width: 80%;
+        /*background-color: pink;*/
+        display: flex;
+        position: relative;
+        top: 5px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    nav>ul>li {
+        list-style: none;
+    }
+
+    nav>ul>li>a {
+        color: black;
+        font-weight: 700;
+        font-size: 1.3rem;
+        text-decoration: none;
+        font-family: 'futura book';
+
+    }
+
+    nav>ul>li>a:visited {
+        color: black;
+
+    }
+
+    .nav_dec {
+        color: white !important;
+        border-bottom: 2px solid black;
+        border-spacing: 4px;
+    }
 }
 
-nav>ul {
-    width: 80%;
-    /*background-color: pink;*/
-    display: flex;
-    position: relative;
-    top: 5px;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-
-nav>ul>li {
-    list-style: none;
-}
-
-nav>ul>li>a {
-    color: black;
-    font-weight: 700;
-    font-size: 1.3rem;
-    text-decoration: none;
-    font-family: 'futura book';
+@media (min-width: 992px) {
 
 }
-
-nav>ul>li>a:visited {
-    color: black;
-
+/*------------------------------------------------------------------------------------------*/
+.const_1 {
+    margin: 20px 50px 20px 50px;
 }
 
-/*-------------------------------------------------------------------*/
+.fix_frame {
+    height: 79vh;
+    overflow: auto;
+}
 
-/*-------index: image section-----*/
+/*------------------------------------------------------------------------------------------*/
+
+@keyframes fadeInBlack {
+    0% { opacity:0.5; filter: saturate(0)}
+    30% {opacity: 1;}
+    50% {filter: saturate(0);}
+    100% {opacity: 1;}
+}
+
+/*--------------------------------------index section-----------------------------------*/
 
 .imgBox {
-    margin: 50px 50px 0px 50px;
     /*width: 100vw;*/
     background-color: turquoise;
     display: flex;
     height: 79vh;
     justify-content: center;
+    animation: fadeIn 150ms ease-in 0s 1 forwards;
+
 
 }
 
@@ -126,30 +155,38 @@ nav>ul>li>a:visited {
     object-position: right;
 }
 
-/*--------image gallery--------*/
+/*--------------------------------------gallery section-----------------------------------*/
 
-.gallery {
-    margin: 50px 50px 20px 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 20vw;
-    grid-gap: 0px;
+
+@media (min-width:1200px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0px;
+        height: 195%;
+    }
+}
+
+.gallery__img:hover {
+    filter: saturate(0.2);
 }
 
 .gallery__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
+    animation: fadeInBlack 1s ease-in 0s 1 forwards;
 }
 
-/*----------bio page---------*/
+/*--------------------------------------bio section-----------------------------------*/
 
 .bioMate {
-    margin: 50px 70px 50px 70px;
     display: block;
     /*background-color: mediumaquamarine;*/
     column-count: 2;
     column-gap: 3%;
+    animation: fadeIn 150ms ease-in 0s 1 forwards;
 }
 
 .bioMate>section {
@@ -159,7 +196,7 @@ nav>ul>li>a:visited {
 }
 
 .imgBio {
-    max-width: 80%;
+    max-width: 90%;
 }
 
 #bio_image {
@@ -168,40 +205,82 @@ nav>ul>li>a:visited {
     justify-content: center;
 }
 
-/*-----------contact page-----------*/
+/*--------------------------------------contact section-----------------------------------*/
 
 .cont_form_outer {
     /*overflow: hidden;*/
+    /*background-color: mediumorchid;*/
     position: relative;
-
-}
-
-.cont_form_background {
-    margin: 50px 50px 0px 50px;
-    background-image: url(/images/gallery/contact_bckgr.jpg);
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
     height: 79vh;
 
 }
 
-
-.cont_form_contents {
-    display: flex;
-    min-width: 20vw;
-    max-width: 50vw;
-    flex-flow: column;
-    margin: 0 auto;
-    z-index: 200;
-    top: 30%;
-    left: 40%;
-    text-align: center;
-    justify-content: center;
-    position: absolute;
-    color: white;
-    font-family: 'futura book';
-
+.cont_form_background {
+    background-image: url(/images/gallery/contact_bckgr.jpg);
+    background-size: cover;
+    background-position: bottom;
+    z-index: 100;
+    height: 79vh;
 }
 
-#contact_forms {}
+.cont_form_contents {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: 'futura book';
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    margin-top: -260px;
+    z-index: 200;
+    left: 50%;
+    margin-left: -250px;
+    height: 520px;
+
+    animation: fadeIn 150ms ease-in 0s 1 forwards;
+
+    /*background-color: blue;*/
+}
+
+.cont_form_contents>hr {
+    width: 420px;
+    margin: 2vh;
+    border-top: 2 px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: goldenrod;
+    border-style: dashed;
+    
+}
+
+#contact_forms {
+    text-align: center;
+    color: white;
+    font-family: 'futura book';
+    padding-top: 23px;
+}
+
+#contact_forms>h3{
+    padding: 5px;
+}
+
+.spaceOut {
+    padding: 5px;
+    margin: 5px;
+}
+
+.stretch_1 {
+    width: 190px;
+}
+
+.stretch_2 {
+    width: 410px;
+}
+
+.stretch_3 {
+    height: 100px;
+    line-height: normal;
+}
