@@ -26,6 +26,7 @@ html {
     padding: 20px;
     max-width: 1920px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
@@ -113,9 +114,8 @@ html {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) {}
 
-}
 /*------------------------------------------------------------------------------------------*/
 .const_1 {
     margin: 20px 50px 20px 50px;
@@ -129,54 +129,122 @@ html {
 /*------------------------------------------------------------------------------------------*/
 
 @keyframes fadeInBlack {
-    0% { opacity:0.5; filter: saturate(0)}
-    30% {opacity: 1;}
-    50% {filter: saturate(0);}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0.5;
+        filter: saturate(0)
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    50% {
+        filter: saturate(0);
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 /*--------------------------------------index section-----------------------------------*/
 
 .imgBox {
     /*width: 100vw;*/
-    background-color: turquoise;
-    display: flex;
+    /*background-color: turquoise;*/
+    display: block;
     height: 79vh;
     justify-content: center;
-    animation: fadeIn 150ms ease-in 0s 1 forwards;
-
-
+    position: relative;
 }
 
-.indexImg1 {
+
+.imgBox>img {
+    margin: 0 auto;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: right;
+    display: block;
+    filter: contrast(120%);
 }
+
+
+#overlay1 {
+    width: 100%;
+    height: 100%;
+    /*background-color: goldenrod;*/
+    font-size: 50px;
+    position: absolute;
+
+    top: 0%;
+    text-align: center;
+    line-height: 7.5;
+    color: white;
+    display: ;
+}
+
+#overlay1:hover >a {
+    display: block;
+    
+}
+
+#overlay1>a {
+    text-decoration: none;
+    color: white;
+    display: none;
+}
+
+#overlay1>a:visited {
+    color: white;
+}
+
+
+
+#indexImg2 {
+    display: none;
+}
+
+
 
 /*--------------------------------------gallery section-----------------------------------*/
 
 
 @media (min-width:1200px) {
     .gallery {
+        display: -ms-grid;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 0px;
-        height: 195%;
+        grid-auto-rows: 40vh;
     }
-}
 
-.gallery__img:hover {
-    filter: saturate(0.2);
-}
 
-.gallery__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    animation: fadeInBlack 1s ease-in 0s 1 forwards;
+    .gallery__img:hover {
+        -webkit-filter: saturate(0.2);
+        filter: saturate(0.2);
+    }
+
+    .gallery__img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        cursor: pointer;
+        /*-webkit-animation: fadeInBlack 600ms ease-in 0s 1 forwards;
+            animation: fadeInBlack 600ms ease-in 0s 1 forwards;*/
+    }
 }
 
 /*--------------------------------------bio section-----------------------------------*/
@@ -192,7 +260,6 @@ html {
 .bioMate>section {
     font-family: Arial, Helvetica, sans-serif;
     font-size: .9vw;
-
 }
 
 .imgBio {
@@ -239,7 +306,7 @@ html {
     margin-left: -250px;
     height: 520px;
 
-    animation: fadeIn 150ms ease-in 0s 1 forwards;
+    animation: fadeIn 700ms ease-in 0s 1 forwards;
 
     /*background-color: blue;*/
 }
@@ -253,7 +320,7 @@ html {
     border-right: 0px;
     border-color: goldenrod;
     border-style: dashed;
-    
+
 }
 
 #contact_forms {
@@ -263,7 +330,7 @@ html {
     padding-top: 23px;
 }
 
-#contact_forms>h3{
+#contact_forms>h3 {
     padding: 5px;
 }
 

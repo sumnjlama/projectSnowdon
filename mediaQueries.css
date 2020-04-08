@@ -1,0 +1,26 @@
+@media (min-width: 576px){/*----Small devices, mobile phones-----*/
+    .topSect {
+        background-color: mediumaquamarine;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 100%;
+        padding: 20px;
+        max-width: 1920px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 768px){/*----Small devices, tablets-----*/
+
+}
+
+@media (min-width: 992px){/*----medium monitors------*/
+
+}
+
+@media (min-width: 1200px){/*----large monitors-----*/
+
+}
+
+

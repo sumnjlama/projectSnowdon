@@ -6,36 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suman Lama: Snowdonia</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="topSect bigPics">
-            <header>
-                <div class="pgTitle header" id="pg_title">
-                    <h1>Suman Lama : <span class="txtSlct">Snowdon, Snowdonia</span></h1>
-                </div>
-            </header>
+        <header>
+            <div class="pgTitle header" id="pg_title">
+                <h1>Suman Lama : <span class="txtSlct">Snowdon, Snowdonia</span></h1>
+            </div>
+        </header>
 
-            <nav class="header">
-                <ul>
-                    <li><a class="nav_dec" href="#">Home</a>
-                    </li>
-                    <li><a href="gallery.html">Photos</a></li>
-                    <li><a href="bio.html">Biography</a></li>
-                    <li><a href="portfolioPage.html">Links</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
+        <nav class="header">
+            <ul>
+                <li><a class="nav_dec" href="#">Home</a>
+                </li>
+                <li><a href="gallery.html">Photos</a></li>
+                <li><a href="bio.html">Biography</a></li>
+                <li><a href="portfolioPage.html">Links</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
 
-                </ul>
-            </nav>
+            </ul>
+        </nav>
 
 
     </div>
-    
-    <div id="img_slide " class="imgBox const_1">
-        <figure><img src="/images/indexImg1.jpg" class="indexImg1 " alt="indexImagemissing"></figure>
 
+    <div id="img_slide " class="imgBox const_1">
+        <img src="/images/indexImg1.jpg" class="indexImg " id="indexImg1" alt="indexImagemissing">
+        <img src="/images/indexImg1.jpg" class="indexImg " id="indexImg2" alt="indexImagemissing">
+        <span id="overlay1"><a href="gallery.html">
+                <h1>See more...</h1>
+            </a></span>
     </div>
 </body>
+<script src="scripts.js"></script>
 
 </html>
