@@ -1,6 +1,6 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
 
     /*----Small devices, mobile phones-----*/
     .top-sect {
@@ -158,4 +158,13 @@
         content: "Suman Lama: ";
         font-weight: 100;
     }
+
+    #txt-slct {
+        margin-left:0%;
+    }
+
+    nav>ul {
+        margin-right: 0%;
+    }
+
 }
