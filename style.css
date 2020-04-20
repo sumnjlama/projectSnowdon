@@ -64,7 +64,7 @@ body {
     /*background-color: yellow;*/
     font-family: 'futura book';
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-left: 5%;
     text-align: start;
 }
@@ -99,7 +99,7 @@ body {
 
 .ham-menu {
     height: 7px;
-    width: 80%;
+    width: 50%;
     background-color: black;
     display: block;
 }
@@ -121,8 +121,8 @@ body {
 }
 
 .nav-slide-in {
-    -webkit-animation: slide-in-nav 500ms ease-in 0s 1 forwards;
-            animation: slide-in-nav 500ms ease-in 0s 1 forwards;
+    -webkit-animation: slide-in-nav 500ms linear 0s 1 forwards;
+            animation: slide-in-nav 500ms linear 0s 1 forwards;
 }
 
 .nav-slide-out {

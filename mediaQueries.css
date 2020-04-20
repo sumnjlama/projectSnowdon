@@ -28,6 +28,11 @@
         content: ", Snowdonia";
         font-weight: 800;
     }
+
+    .ham-menu {
+        height: 7px;
+        width: 80%;
+    }
 }
 
 @media (min-width: 769px) {
@@ -66,7 +71,10 @@
         margin: 0;
     }
 
-    #txt-slct {}
+    #txt-slct {
+        /*background-color: yellow;*/
+        font-size: 2.2rem;
+    }
 
     /*--------------------------------------nav section-----------------------------------*/
     nav {
