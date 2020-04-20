@@ -3,28 +3,23 @@ let hamMenu = document.getElementById("ham-menu-wrapper");
 
 let openNav = () => {
     document.getElementById("slide-in-nav").style.display = "block";
-    document.getElementById("slide-in-nav").className= "nav-slide-in";
-
+    document.getElementById("slide-in-nav").className = "nav-slide-in";
 }
 
 let closeNav = () => {
     let slideNav = document.getElementById("slide-in-nav");
-    slideNav.className= "nav-slide-out";
-    setTimeout (function () {
-    slideNav.style.display = "none";
+    slideNav.className = "nav-slide-out";
+    setTimeout(function () {
+        slideNav.style.display = "none";
 
     }, 550);
-    
-
-    
-
 }
-
 
 window.addEventListener("resize", () => {
     let noAnimate = document.querySelector(".nav-slide-out");
-    if(window.innerWidth<992) { 
-        document.getElementById("slide-in-nav").className= "nav-static" ;}
+    if (window.innerWidth < 992) {
+        document.getElementById("slide-in-nav").className = "nav-static";
+    }
 });
 
 

@@ -6,7 +6,6 @@ html {
 
 body {
     overflow-x: hidden;
-    background-color: rgb(226, 203, 29);
 }
 
 .resize-animation-stopper * {
@@ -34,7 +33,7 @@ body {
 /*--------------------------------------topSect section-----------------------------------*/
 
 .top-sect {
-    background-color: mediumaquamarine;
+    /*background-color: mediumaquamarine;*/
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 60% 40%;
@@ -65,7 +64,7 @@ body {
     /*background-color: yellow;*/
     font-family: 'futura book';
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-left: 5%;
     text-align: start;
 }
