@@ -11,16 +11,17 @@
 </head>
 
 <body>
-    <div class="topSect bigPics">
+    
+    <div class="top-sect big-pics">
         <header>
-            <div class="pgTitle header" id="pg_title">
-                <h1>Suman Lama : <span class="txtSlct">Snowdon, Snowdonia</span></h1>
+            <div class="pg-title  header" id="pg-title">
+                <span id="txt-slct">Snowdon</span>
             </div>
         </header>
 
-        <nav class="header">
+        <nav id="main-nav">
             <ul>
-                <li><a class="nav_dec" href="#">Home</a>
+                <li><a class="nav-dec" href="#">Home</a>
                 </li>
                 <li><a href="gallery.html">Photos</a></li>
                 <li><a href="bio.html">Biography</a></li>
@@ -30,15 +31,24 @@
             </ul>
         </nav>
 
+        <div id="ham-menu-wrapper" onclick="openNav()" class="">
+            <div class="ham-menu" id="bar-1"></div>
+            <div class="ham-menu" id="bar-2"></div>
+            <div class="ham-menu" id="bar-3"></div>
+        </div>
 
+    <div id="slide-in-nav" class="nav-static">
+        <div onclick="closeNav()" class="nav-close-btn x1"></div>
+        <div onclick="closeNav()" class="nav-close-btn x2"></div>
+        <div onclick="closeNav()" class="nav-close-btn-bck"></div>
     </div>
+    </div>
+    
 
-    <div id="img_slide " class="imgBox const_1">
-        <img src="/images/indexImg1.jpg" class="indexImg " id="indexImg1" alt="indexImagemissing">
-        <img src="/images/indexImg1.jpg" class="indexImg " id="indexImg2" alt="indexImagemissing">
-        <span id="overlay1"><a href="gallery.html">
-                <h1>See more...</h1>
-            </a></span>
+    <div id="img-slide " class="img-box const-1">
+        <img src="/images/indexImg1.jpg" class="index-img " id="index-img1" alt="indexImagemissing">
+        <img src="/images/indexImg1.jpg" class="index-img " id="index-img2" alt="indexImagemissing">
+
     </div>
 </body>
 <script src="scripts.js"></script>

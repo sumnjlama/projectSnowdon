@@ -1,3 +1,32 @@
+/*---------nav hamburger menu action---------------*/
+let hamMenu = document.getElementById("ham-menu-wrapper");
+
+let openNav = () => {
+    document.getElementById("slide-in-nav").className= "nav-slide-in";
+
+}
+
+let closeNav = () => {
+    document.getElementById("slide-in-nav").className= "nav-slide-out";
+
+}
+
+
+window.addEventListener("resize", () => {
+    let noAnimate = document.querySelector(".nav-slide-out");
+    if(window.innerWidth<992) { 
+        document.getElementById("slide-in-nav").className= "nav-static" ;}
+});
+
+
+
+
+
+
+
+
+
+
 /*-----------------------------------Index slideshow-----------------------------------------
 
 var autImgSlide = 0;

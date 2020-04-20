@@ -2,6 +2,15 @@ html {
     font-size: 100%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+  }
+
 @font-face {
     font-family: "futura book";
     src: url(fonts/Futura\ Std\ Book.ttf);
@@ -18,70 +27,137 @@ html {
 
 /*--------------------------------------topSect section-----------------------------------*/
 
-.topSect {
-    /*background-color: mediumaquamarine;*/
+.top-sect {
+    background-color: mediumaquamarine;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
     font-size: 100%;
-    padding: 20px;
-    max-width: 1920px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-
-.header {
     height: 12vh;
-}
-
-.bigPics {
     position: relative;
 }
 
+
 /*--------------------------------------pgTitle section-----------------------------------*/
 
-.pgTitle {
-    top: 10px;
+.pg-title {
     /*background-color: red;*/
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 3vh;
+    justify-content: left;
+    height: 100%;
 }
 
-#pg_title>h1 {
+#txt-slct {
     /*background-color: yellow;*/
     font-family: 'futura book';
+    font-weight: 800;
     font-size: 2rem;
-    font-weight: 100;
-    width: 80%;
+    margin-left: 5%;
     text-align: start;
 }
 
-.txtSlct {
-    font-weight: 600;
-    cursor: default;
+#main-nav {
+    display: none;
+}
+
+/*--------------------------------Ham Nav section----------------------*/
+#ham-menu-wrapper {
+    cursor: pointer;
+    height: 60%;
+    width: 80px;
+    /*background-color: violet;*/
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+.ham-menu {
+    height: 7px;
+    width: 80%;
+    background-color: black;
+    display: block;
+}
+
+/*--------slide in nav--------*/
+#slide-in-nav {
+    position: absolute;
+    height: 100vh;
+    width: 80vw;
+    background-color: grey;
+    margin-top: -3%;
+    z-index: 300;
+
+}
+
+.nav-static {
+    margin-left:100%;
+}
+
+.nav-slide-in {
+    animation: slide-in-nav 500ms ease-in 0s 1 forwards;
+}
+
+.nav-slide-out {
+    animation: slide-out-nav 500ms ease-out 0s 1 forwards;
 }
 
 
-#pg_title>h1>a:visited {
-    color: black;
+.x-wrapper {
+    background-color: ivory;
+    height: 80px;
+    width: 70px;
+    position: absolute;
+    top: 30px;
 }
 
-/*--------------------------------------nav section-----------------------------------*/
+.nav-close-btn {
+    height: 10px;
+    width: 70px;
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    margin-left: 10px;
+    cursor: pointer;
+    z-index: 350;
+}
+
+.nav-close-btn-bck {
+    height: 61px;
+    width: 60px;
+    background-color: transparent;
+    position: absolute;
+    top: 44px;
+    margin-left: 15px;
+    cursor: pointer;
+    z-index: 150;
+}
+
+.x1 {
+    transform: rotate(45deg);
+}
+
+.x2 {
+    transform: rotate(135deg);
+}
+
+/*--------------------------------------nav section-----------------------------------
+    
 
 @media (min-width: 1200px) {
     nav {
         display: flex;
-        /*background-color: yellow;*/
-        justify-content: center;
+        background-color: yellow;
+        justify-content: flex-end;
         align-items: center;
-        margin-right: 3vh;
+        margin-right: 1vw;
     }
 
     nav>ul {
         width: 80%;
-        /*background-color: pink;*/
+        /*background-color: pink;
         display: flex;
         position: relative;
         top: 5px;
@@ -107,8 +183,8 @@ html {
 
     }
 
-    .nav_dec {
-        color: white !important;
+    .nav-dec {
+        color: transparent !important;
         border-bottom: 2px solid black;
         border-spacing: 4px;
     }
@@ -117,11 +193,11 @@ html {
 @media (min-width: 992px) {}
 
 /*------------------------------------------------------------------------------------------*/
-.const_1 {
-    margin: 20px 50px 20px 50px;
+.const-1 {
+    margin: 20px 10px;
 }
 
-.fix_frame {
+.fix-frame {
     height: 79vh;
     overflow: auto;
 }
@@ -158,19 +234,39 @@ html {
 }
 
 
+@keyframes slide-in-nav {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 20%;
+    }
+
+}
+
+@keyframes slide-out-nav {
+    0% {
+        margin-left: 20%;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
 /*--------------------------------------index section-----------------------------------*/
 
-.imgBox {
-    /*width: 100vw;*/
-    /*background-color: turquoise;*/
+.img-box {
+    padding: 0;
+    background-color: turquoise;
     display: block;
-    height: 79vh;
-    justify-content: center;
+    height: 80vh;
     position: relative;
 }
 
 
-.imgBox>img {
+.img-box>img {
     margin: 0 auto;
     width: 100%;
     height: 100%;
@@ -180,42 +276,9 @@ html {
     filter: contrast(120%);
 }
 
-
-#overlay1 {
-    width: 100%;
-    height: 100%;
-    /*background-color: goldenrod;*/
-    font-size: 50px;
-    position: absolute;
-
-    top: 0%;
-    text-align: center;
-    line-height: 7.5;
-    color: white;
-    display: ;
-}
-
-#overlay1:hover >a {
-    display: block;
-    
-}
-
-#overlay1>a {
-    text-decoration: none;
-    color: white;
+#index-img2 {
     display: none;
 }
-
-#overlay1>a:visited {
-    color: white;
-}
-
-
-
-#indexImg2 {
-    display: none;
-}
-
 
 
 /*--------------------------------------gallery section-----------------------------------*/
@@ -231,12 +294,12 @@ html {
     }
 
 
-    .gallery__img:hover {
+    .gallery--img:hover {
         -webkit-filter: saturate(0.2);
         filter: saturate(0.2);
     }
 
-    .gallery__img {
+    .gallery--img {
         width: 100%;
         height: 100%;
         -o-object-fit: cover;
@@ -266,7 +329,7 @@ html {
     max-width: 90%;
 }
 
-#bio_image {
+#bio-image {
     /*background-color: mediumblue;*/
     display: flex;
     justify-content: center;
@@ -274,7 +337,7 @@ html {
 
 /*--------------------------------------contact section-----------------------------------*/
 
-.cont_form_outer {
+.cont-form-outer {
     /*overflow: hidden;*/
     /*background-color: mediumorchid;*/
     position: relative;
@@ -282,15 +345,15 @@ html {
 
 }
 
-.cont_form_background {
-    background-image: url(/images/gallery/contact_bckgr.jpg);
+.cont-form-background {
+    background-image: url(/images/gallery/contact-bckgr.jpg);
     background-size: cover;
     background-position: bottom;
     z-index: 100;
     height: 79vh;
 }
 
-.cont_form_contents {
+.cont-form-contents {
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -311,7 +374,7 @@ html {
     /*background-color: blue;*/
 }
 
-.cont_form_contents>hr {
+.cont-form-contents>hr {
     width: 420px;
     margin: 2vh;
     border-top: 2 px;
@@ -323,14 +386,14 @@ html {
 
 }
 
-#contact_forms {
+#contact-forms {
     text-align: center;
     color: white;
     font-family: 'futura book';
     padding-top: 23px;
 }
 
-#contact_forms>h3 {
+#contact-forms>h3 {
     padding: 5px;
 }
 
@@ -339,15 +402,15 @@ html {
     margin: 5px;
 }
 
-.stretch_1 {
+.stretch-1 {
     width: 190px;
 }
 
-.stretch_2 {
+.stretch-2 {
     width: 410px;
 }
 
-.stretch_3 {
+.stretch-3 {
     height: 100px;
     line-height: normal;
 }

@@ -1,26 +1,139 @@
-@media (min-width: 576px){/*----Small devices, mobile phones-----*/
-    .topSect {
-        background-color: mediumaquamarine;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+@media (min-width: 360px) {
+
+    /*----Small devices, mobile phones-----*/
+    .top-sect {
+        /*background-color: mediumaquamarine;*/
         font-size: 100%;
-        padding: 20px;
-        max-width: 1920px;
-        margin: 0 auto;
-        box-sizing: border-box;
+        margin-top: 3%;
+    }
+
+    #txt-slct {
+        /*background-color: yellow;*/
+        font-size: 2rem;
+    }
+
+    .pg-title {
+        margin-left: 5%;
+    }
+
+    #ham-menu-wrapper {
+        margin-right: 10%;
     }
 }
 
-@media (min-width: 768px){/*----Small devices, tablets-----*/
+@media (min-width: 576px) {
+    #txt-slct::after {
+        content: ", Snowdonia";
+        font-weight: 800;
+    }
+}
+
+@media (min-width: 769px) {
+    /*--------------------------------Small devices, tablets---------------------------*/
+    .top-sect {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    #txt-slct::after {
+        content: ", Snowdonia";
+        font-weight: 800;
+    }
+
+    .const-1 {
+        margin: 20px 30px 0px 30px;
+
+    }
 
 }
 
-@media (min-width: 992px){/*----medium monitors------*/
+@media (min-width: 992px) {
+
+    /*----medium monitors------*/
+    /*-------------------pg-title----------------------------*/
+    .top-sect {
+        /*background-color: mediumaquamarine;*/
+        font-size: 100%;
+        padding: 20px;
+        margin: 0px 50px;
+    }
+
+    .pg-title {
+        margin: 0;
+    }
+
+    #txt-slct {}
+
+    /*--------------------------------------nav section-----------------------------------*/
+    nav {
+        display: flex !important;
+        /*background-color: yellow;*/
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav>ul {
+        width: 90%;
+        /*background-color: pink;*/
+        display: flex;
+        position: relative;
+        top: 5px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-right: 5%;
+    }
+
+    nav>ul>li {
+        list-style: none;
+    }
+
+    nav>ul>li>a {
+        color: black;
+        font-weight: 700;
+        font-size: 1.3rem;
+        text-decoration: none;
+        font-family: 'futura book';
+
+    }
+
+    nav>ul>li>a:visited {
+        color: black;
+
+    }
+
+    .nav-dec {
+        color: transparent !important;
+        border-bottom: 2px solid black;
+        border-spacing: 4px;
+    }
+
+    #ham-menu-wrapper {
+        display: none;
+    }
+
+    
+
+    .const-1 {
+        margin: 20px 50px 0px 50px;
+
+    }
+
+    #slide-in-nav{
+        display: none;
+    }
 
 }
 
-@media (min-width: 1200px){/*----large monitors-----*/
+@media (min-width: 1200px) {
+
+    /*----large monitors-----*/
 
 }
 
-
+@media (min-width:1400px) {
+    #txt-slct::before {
+        content: "Suman Lama: ";
+        font-weight: 100;
+    }
+}
