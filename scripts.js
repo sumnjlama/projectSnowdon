@@ -2,12 +2,21 @@
 let hamMenu = document.getElementById("ham-menu-wrapper");
 
 let openNav = () => {
+    document.getElementById("slide-in-nav").style.display = "block";
     document.getElementById("slide-in-nav").className= "nav-slide-in";
 
 }
 
 let closeNav = () => {
-    document.getElementById("slide-in-nav").className= "nav-slide-out";
+    let slideNav = document.getElementById("slide-in-nav");
+    slideNav.className= "nav-slide-out";
+    setTimeout (function () {
+    slideNav.style.display = "none";
+
+    }, 550);
+    
+
+    
 
 }
 

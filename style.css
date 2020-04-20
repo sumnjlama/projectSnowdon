@@ -4,6 +4,7 @@ html {
 
 body {
     overflow-x: hidden;
+    background-color: rgb(226, 203, 29);
 }
 
 .resize-animation-stopper * {
@@ -89,6 +90,7 @@ body {
     background-color: grey;
     margin-top: -3%;
     z-index: 300;
+    display: none;
 
 }
 
