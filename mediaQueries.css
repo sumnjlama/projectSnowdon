@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @media (min-width: 360px) {
 
     /*----Small devices, mobile phones-----*/
@@ -31,6 +33,7 @@
 @media (min-width: 769px) {
     /*--------------------------------Small devices, tablets---------------------------*/
     .top-sect {
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
 
     }
@@ -67,20 +70,31 @@
 
     /*--------------------------------------nav section-----------------------------------*/
     nav {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
         /*background-color: yellow;*/
-        justify-content: flex-end;
-        align-items: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     nav>ul {
         width: 90%;
         /*background-color: pink;*/
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: relative;
         top: 5px;
-        justify-content: space-between;
-        flex-wrap: nowrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
         margin-right: 5%;
     }
 

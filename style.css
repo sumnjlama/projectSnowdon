@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 html {
     font-size: 100%;
 }
@@ -8,7 +10,10 @@ body {
 }
 
 .resize-animation-stopper * {
-    animation: none !important;
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-transition: none !important;
+    -o-transition: none !important;
     transition: none !important;
   }
 
@@ -30,7 +35,9 @@ body {
 
 .top-sect {
     background-color: mediumaquamarine;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 60% 40%;
     grid-template-columns: 60% 40%;
     font-size: 100%;
     height: 12vh;
@@ -42,9 +49,15 @@ body {
 
 .pg-title {
     /*background-color: red;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     height: 100%;
 }
 
@@ -68,11 +81,21 @@ body {
     width: 80px;
     /*background-color: violet;*/
     justify-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .ham-menu {
@@ -99,11 +122,13 @@ body {
 }
 
 .nav-slide-in {
-    animation: slide-in-nav 500ms ease-in 0s 1 forwards;
+    -webkit-animation: slide-in-nav 500ms ease-in 0s 1 forwards;
+            animation: slide-in-nav 500ms ease-in 0s 1 forwards;
 }
 
 .nav-slide-out {
-    animation: slide-out-nav 500ms ease-out 0s 1 forwards;
+    -webkit-animation: slide-out-nav 500ms ease-out 0s 1 forwards;
+            animation: slide-out-nav 500ms ease-out 0s 1 forwards;
 }
 
 
@@ -138,11 +163,15 @@ body {
 }
 
 .x1 {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .x2 {
-    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
 }
 
 /*--------------------------------------nav section-----------------------------------
@@ -206,10 +235,11 @@ body {
 
 /*------------------------------------------------------------------------------------------*/
 
-@keyframes fadeInBlack {
+@-webkit-keyframes fadeInBlack {
     0% {
         opacity: 0.5;
-        filter: saturate(0)
+        -webkit-filter: saturate(0);
+                filter: saturate(0)
     }
 
     30% {
@@ -217,7 +247,39 @@ body {
     }
 
     50% {
-        filter: saturate(0);
+        -webkit-filter: saturate(0);
+                filter: saturate(0);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInBlack {
+    0% {
+        opacity: 0.5;
+        -webkit-filter: saturate(0);
+                filter: saturate(0)
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    50% {
+        -webkit-filter: saturate(0);
+                filter: saturate(0);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
     }
 
     100% {
@@ -236,6 +298,18 @@ body {
 }
 
 
+@-webkit-keyframes slide-in-nav {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 20%;
+    }
+
+}
+
+
 @keyframes slide-in-nav {
     0% {
         margin-left: 100%;
@@ -245,6 +319,16 @@ body {
         margin-left: 20%;
     }
 
+}
+
+@-webkit-keyframes slide-out-nav {
+    0% {
+        margin-left: 20%;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
 }
 
 @keyframes slide-out-nav {
@@ -272,10 +356,13 @@ body {
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: right;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
     display: block;
-    filter: contrast(120%);
+    -webkit-filter: contrast(120%);
+            filter: contrast(120%);
 }
 
 #index-img2 {
@@ -290,6 +377,7 @@ body {
     .gallery {
         display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 0px 1fr 0px 1fr;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 0px;
         grid-auto-rows: 40vh;
@@ -317,9 +405,14 @@ body {
 .bioMate {
     display: block;
     /*background-color: mediumaquamarine;*/
-    column-count: 2;
-    column-gap: 3%;
-    animation: fadeIn 150ms ease-in 0s 1 forwards;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 3%;
+       -moz-column-gap: 3%;
+            column-gap: 3%;
+    -webkit-animation: fadeIn 150ms ease-in 0s 1 forwards;
+            animation: fadeIn 150ms ease-in 0s 1 forwards;
 }
 
 .bioMate>section {
@@ -333,8 +426,12 @@ body {
 
 #bio-image {
     /*background-color: mediumblue;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 /*--------------------------------------contact section-----------------------------------*/
@@ -357,13 +454,20 @@ body {
 
 .cont-form-contents {
     width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     color: white;
     font-family: 'futura book';
     position: absolute;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     top: 50%;
     margin-top: -260px;
     z-index: 200;
@@ -371,7 +475,9 @@ body {
     margin-left: -250px;
     height: 520px;
 
-    animation: fadeIn 700ms ease-in 0s 1 forwards;
+    -webkit-animation: fadeIn 700ms ease-in 0s 1 forwards;
+
+            animation: fadeIn 700ms ease-in 0s 1 forwards;
 
     /*background-color: blue;*/
 }
