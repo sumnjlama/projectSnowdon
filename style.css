@@ -121,8 +121,8 @@ body {
 }
 
 .nav-slide-in {
-    -webkit-animation: slide-in-nav 500ms linear 0s 1 forwards;
-            animation: slide-in-nav 500ms linear 0s 1 forwards;
+    -webkit-animation: slide-in-nav 200ms ease 0s 1 forwards;
+            animation: slide-in-nav 200ms ease 0s 1 forwards;
 }
 
 .nav-slide-out {
