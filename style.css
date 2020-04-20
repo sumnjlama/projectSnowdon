@@ -60,7 +60,7 @@ body {
     height: 100%;
 }
 
-#txt-slct {
+.txt-slct {
     /*background-color: yellow;*/
     font-family: 'futura book';
     font-weight: 800;

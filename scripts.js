@@ -31,6 +31,7 @@ window.addEventListener("resize", () => {
 
 
 
+
 /*-----------------------------------Index slideshow-----------------------------------------
 
 var autImgSlide = 0;
