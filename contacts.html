@@ -6,60 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suman Lama: Snowdonia</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    
+
 </head>
 
 <body>
-    <div class="topSect bigPics">
+    <div class="top-sect big-pics">
         <header>
-            <div class="pgTitle header" id="pg_title">
-                <h1>Suman Lama : <span class="txtSlct">Get in touch</span></h1>
+            <div class="pg-title  header" id="pg-title">
+                <span id="index-txt" class="txt-slct">Snowdon</span>
             </div>
         </header>
 
-        <nav class="header">
+        <nav id="main-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Photos</a></li>
+                <li><a href="index.html">Home</a>
+                </li>
                 <li><a href="bio.html">Biography</a></li>
                 <li><a href="portfolioPage.html">Links</a></li>
-                <li><a href="#" class="nav_dec">Contacts</a></li>
-
+                <li><a class="nav-dec">Contacts</a></li>
             </ul>
         </nav>
 
+        <div id="ham-menu-wrapper" onclick="openNav()" class="">
+            <div class="ham-menu" id="bar-1"></div>
+            <div class="ham-menu" id="bar-2"></div>
+            <div class="ham-menu" id="bar-3"></div>
+        </div>
 
-    </div>
-    <div class="cont_form_outer const_1">
-        <div class="cont_form_contents">
-                <h2>Email: exampleWebsite@email.com</h2>
-                <br class="">
-                <hr>
-                <br>
-                <h2>social media icons go here</h2>
-                <br>
-                <hr>
-                <br>
+        <div id="slide-in-nav" class="nav-static">
+            <div onclick="closeNav()" class="nav-close-btn x1"></div>
+            <div onclick="closeNav()" class="nav-close-btn x2"></div>
+            <div onclick="closeNav()" class="nav-close-btn-bck"></div>
+            <ul id="mobile-nav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="bio.html">Biography</a></li>
+                <li><a href="portfolioPage.html">Links</a></li>
+                <li><a class="nav-dec">Contacts</a></li>
+            </ul>
         
-                <form action="" id="contact_forms">
-                    <h3>Send me a message:</h3>
-                    <input type="text" class="spaceOut stretch_1" placeholder="First name">
-                    <input type="text" class="spaceOut stretch_1" placeholder="Last name">
-                    <br>
-                    <input type="text" class="spaceOut stretch_2" placeholder="Email address" class="stretch_input">
-                    <br>
-                    <input type="text" class="spaceOut stretch_2" placeholder="Confirm email address">
-                    <br>
-                    <input type="text" class="spaceOut stretch_2 stretch_3" placeholder="Send me your messages...">
+        </div>
+    </div>
+    <div class="cont-form-outer const-1">
+        <div class="cont-form-contents">
+            <h1>Get in touch</h1>
+            <br>
+            <br>
+            <h2>exampleWebsite@email.com</h2>
+            <br>
+            <hr>
+            <br>
+            <h2>social media icons go here</h2>
+            <br>
+            <hr>
+            <br>
 
-                </form>
-            </div>
+            <form action="" id="contact-forms">
+                <h3>Send me a message:</h3>
+                <input type="text" class="space-out stretch-1" placeholder="First name">
+                <input type="text" class="space-out stretch-1" placeholder="Last name">
+                <br>
+                <input type="text" class="space-out stretch-2" placeholder="Email address" class="stretch_input">
+                <br>
+                <input type="text" class="space-out stretch-2" placeholder="Confirm email address">
+                <br>
+                <input type="text" class="space-out stretch-2 stretch-3" placeholder="Send me your messages...">
 
-        <div class="cont_form_background">
+            </form>
+        </div>
+
+        <div class="cont-form-background">
 
         </div>
-            
+
 
 
     </div>
+</body>
+<script src="scripts.js"></script>
+
+</html>

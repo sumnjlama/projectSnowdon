@@ -21,9 +21,8 @@
 
         <nav id="main-nav">
             <ul>
-                <li><a class="nav-dec" href="#">Home</a>
+                <li><a class="nav-dec" >Home</a>
                 </li>
-                <li><a href="gallery.html">Photos</a></li>
                 <li><a href="bio.html">Biography</a></li>
                 <li><a href="portfolioPage.html">Links</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
@@ -41,14 +40,35 @@
         <div onclick="closeNav()" class="nav-close-btn x1"></div>
         <div onclick="closeNav()" class="nav-close-btn x2"></div>
         <div onclick="closeNav()" class="nav-close-btn-bck"></div>
+        <ul id="mobile-nav">
+            <li><a href="index.html">Home</a>
+            </li>
+            <li><a href="bio.html">Biography</a></li>
+            <li><a href="portfolioPage.html">Links</a></li>
+            <li><a class="nav-dec">Contacts</a></li>
+        </ul>
+    
     </div>
     </div>
     
 
-    <div id="img-slide " class="img-box const-1">
+    <!---<div id="img-slide " class="img-box const-1">
         <img src="images/indexImg1.jpg" class="index-img " id="index-img1" alt="indexImagemissing">
         <img src="images/indexImg1.jpg" class="index-img " id="index-img2" alt="indexImagemissing">
 
+    </div>--->
+
+    <div class="fix-frame const-1">
+        <div class="gallery " id="galleryBox">
+            <img src="images/gallery/1.jpg" class="gallery--img" alt="pic1">
+            <img src="images/gallery/2.jpg" class="gallery--img" alt="pic2">
+            <img src="images/gallery/3.jpg" class="gallery--img" alt="pic3">
+            <img src="images/gallery/4.jpg" class="gallery--img" alt="pic4">
+            <img src="images/gallery/5.jpg" class="gallery--img" alt="pic5">
+            <img src="images/gallery/6.jpg" class="gallery--img" alt="pic6">
+            <img src="images/gallery/7.jpg" class="gallery--img" alt="pic7">
+            <img src="images/gallery/7.jpg" class="gallery--img" alt="pic8">
+        </div>
     </div>
 </body>
 <script src="scripts.js"></script>

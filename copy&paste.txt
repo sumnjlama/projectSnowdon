@@ -1,0 +1,38 @@
+-----------mediaQueries---------------
+<link rel="stylesheet" href="mediaQueries.css">
+
+----------nav--------------
+<div class="top-sect big-pics">
+    <header>
+        <div class="pg-title  header" id="pg-title">
+            <span id="index-txt" class="txt-slct">Snowdon</span>
+        </div>
+    </header>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a class="nav-dec" href="#">Home</a>
+            </li>
+            <li><a href="bio.html">Biography</a></li>
+            <li><a href="portfolioPage.html">Links</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+
+        </ul>
+    </nav>
+
+    <div id="ham-menu-wrapper" onclick="openNav()" class="">
+        <div class="ham-menu" id="bar-1"></div>
+        <div class="ham-menu" id="bar-2"></div>
+        <div class="ham-menu" id="bar-3"></div>
+    </div>
+
+<div id="slide-in-nav" class="nav-static">
+    <div onclick="closeNav()" class="nav-close-btn x1"></div>
+    <div onclick="closeNav()" class="nav-close-btn x2"></div>
+    <div onclick="closeNav()" class="nav-close-btn-bck"></div>
+</div>
+</div>
+
+-------js----------
+<script src="scripts.js"></script>
+

@@ -12,7 +12,7 @@ let closeNav = () => {
     setTimeout(function () {
         slideNav.style.display = "none";
 
-    }, 550);
+    }, 250);
 }
 
 window.addEventListener("resize", () => {
@@ -21,6 +21,7 @@ window.addEventListener("resize", () => {
         document.getElementById("slide-in-nav").className = "nav-static";
     }
 });
+
 
 
 
