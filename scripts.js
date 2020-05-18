@@ -1,26 +1,35 @@
-/*---------nav hamburger menu action---------------*/
+/*---------menu hamburger menu action---------------*/
 let hamMenu = document.getElementById("ham-menu-wrapper");
+let menuCloseButton = document.getElementById("menu-close-button");
 
-let openNav = () => {
-    document.getElementById("slide-in-nav").style.display = "block";
-    document.getElementById("slide-in-nav").className = "nav-slide-in";
+
+let openMenu = () => {
+    document.getElementById("slide-in-menu").style.display = "block";
+    document.getElementById("slide-in-menu").className = "menu-slide-in";
 }
 
-let closeNav = () => {
-    let slideNav = document.getElementById("slide-in-nav");
-    slideNav.className = "nav-slide-out";
+let closeMenu = () => {
+    let slideMenu = document.getElementById("slide-in-menu");
+    slideMenu.className = "menu-slide-out";
     setTimeout(function () {
-        slideNav.style.display = "none";
+        slideMenu.style.display = "none";
 
     }, 250);
 }
 
 window.addEventListener("resize", () => {
-    let noAnimate = document.querySelector(".nav-slide-out");
+    let noAnimate = document.querySelector(".menu-slide-out");
     if (window.innerWidth < 992) {
-        document.getElementById("slide-in-nav").className = "nav-static";
+        document.getElementById("slide-in-menu").className = "menu-static";
     }
 });
+
+let hideClsBtn = () => {
+    menuCloseButton.style.display = "none";
+    setTimeout(function () {
+        menuCloseButton.style.display = "block";
+    }, 250);
+}
 
 
 

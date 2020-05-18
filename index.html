@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    
+
     <div class="top-sect big-pics">
         <header>
             <div class="pg-title  header" id="pg-title">
@@ -19,9 +19,9 @@
             </div>
         </header>
 
-        <nav id="main-nav">
+        <nav id="main-menu">
             <ul>
-                <li><a class="nav-dec" >Home</a>
+                <li><a class="nav-dec">Home</a>
                 </li>
                 <li><a href="bio.html">Biography</a></li>
                 <li><a href="portfolioPage.html">Links</a></li>
@@ -30,27 +30,29 @@
             </ul>
         </nav>
 
-        <div id="ham-menu-wrapper" onclick="openNav()" class="">
+        <div id="ham-menu-wrapper" onclick="openMenu()" class="">
             <div class="ham-menu" id="bar-1"></div>
             <div class="ham-menu" id="bar-2"></div>
             <div class="ham-menu" id="bar-3"></div>
         </div>
 
-    <div id="slide-in-nav" class="nav-static">
-        <div onclick="closeNav()" class="nav-close-btn x1"></div>
-        <div onclick="closeNav()" class="nav-close-btn x2"></div>
-        <div onclick="closeNav()" class="nav-close-btn-bck"></div>
-        <ul id="mobile-nav">
-            <li><a href="index.html">Home</a>
-            </li>
-            <li><a href="bio.html">Biography</a></li>
-            <li><a href="portfolioPage.html">Links</a></li>
-            <li><a class="nav-dec">Contacts</a></li>
-        </ul>
-    
+        <div id="slide-in-menu" class="menu-static">
+
+            <div id="menu-close-button" class="">
+                <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn x1"></div>
+                <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn x2"></div>
+                <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn-bck"></div>
+            </div>
+            <ul id="mobile-menu">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="bio.html">Biography</a></li>
+                <li><a href="portfolioPage.html">Links</a></li>
+                <li><a class="nav-dec">Contacts</a></li>
+            </ul>
+
+        </div>
     </div>
-    </div>
-    
 
     <!---<div id="img-slide " class="img-box const-1">
         <img src="images/indexImg1.jpg" class="index-img " id="index-img1" alt="indexImagemissing">

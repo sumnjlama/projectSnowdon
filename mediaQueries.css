@@ -137,7 +137,7 @@
 
     }
 
-    #slide-in-nav{
+    #slide-in-menu{
         display: none !important;
     }
 
@@ -188,6 +188,9 @@
 
     .txt-slct {
         margin-left:0%;
+    }
+    nav>ul {
+        width: 75%;
     }
 
     nav>ul {
