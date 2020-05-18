@@ -8,7 +8,7 @@ let openMenu = () => {
     document.getElementById("slide-in-menu").className = "menu-slide-in";
 }
 
-let closeMenu = () => {
+const closeMenu = () => {
     let slideMenu = document.getElementById("slide-in-menu");
     slideMenu.className = "menu-slide-out";
     setTimeout(function () {
@@ -17,9 +17,14 @@ let closeMenu = () => {
     }, 250);
 }
 
+
 window.addEventListener("resize", () => {
-    let noAnimate = document.querySelector(".menu-slide-out");
-    if (window.innerWidth < 992) {
+    let winWidth = window.innerWidth;
+    if (winWidth == window.innerWidth) {
+        return;
+    }
+
+    if (winWidth < 992) {
         document.getElementById("slide-in-menu").className = "menu-static";
     }
 });
