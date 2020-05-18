@@ -125,6 +125,7 @@ body {
 
 .menu-static {
     margin-left: 100%;
+    display: none;
 }
 
 .menu-slide-in {
