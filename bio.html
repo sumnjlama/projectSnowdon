@@ -6,36 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suman Lama: About me</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="topSect bigPics">
+    <div class="top-sect big-pics">
         <header>
-            <div class="pgTitle header" id="pg_title">
-                <h1>Suman Lama : <span class="txtSlct">About me</span></h1>
+            <div class="pg-title  header" id="pg-title">
+                <span id="index-txt" class="txt-slct">Snowdon</span>
             </div>
         </header>
 
-        <nav class="header">
+        <nav id="main-menu">
             <ul>
-                <li><a href="/index.html">Home</a>
+                <li><a href="index.html">Home</a>
                 </li>
-                <li><a href="gallery.html">Photos</a></li>
-                <li><a href="#" class="nav_dec"
-                        >Biography</a>
-                </li>
+                <li><a class="nav-dec">Biography</a></li>
                 <li><a href="portfolioPage.html">Links</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
 
             </ul>
         </nav>
 
+        <div id="ham-menu-wrapper" onclick="openMenu()" class="">
+            <div class="ham-menu" id="bar-1"></div>
+            <div class="ham-menu" id="bar-2"></div>
+            <div class="ham-menu" id="bar-3"></div>
+        </div>
 
+        <div id="slide-in-menu" class="menu-static">
 
+            <div id="menu-close-button" class="">
+                <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn x1"></div>
+                <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn x2"></div>
+                <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn-bck"></div>
+            </div>
+            <ul id="mobile-menu">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="bio.html">Biography</a></li>
+                <li><a href="portfolioPage.html">Links</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+
+        </div>
     </div>
-    <div class="fix_frame const_1">
-    <div class="bioMate const_1">
+    <div class="fix-frame const-1">
+    <div class="bio-text">
         <section>
             <p> ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus dolore hic provident, at est
                 praesentium maxime rerum ratione eos, dolorem sit expedita non aperiam iure dolores enim sequi aliquam
@@ -85,11 +103,12 @@
         <br>
         <br>
 
-        <span id="bio_image" ><img src="/images/gallery/1.jpg" alt="" class="imgBio"></span>
+        <span id="bio-image" ><img src="/images/gallery/1.jpg" alt="" class="bio-img"></span>
     </div>
 </div>
 
 
 </body>
+<script src="scripts.js"></script>
 
 </html>

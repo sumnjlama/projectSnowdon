@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    overflow-x: ;
+    overflow-x: hidden;
 }
 
 .resize-animation-stopper * {
@@ -342,7 +342,7 @@ body {
 
 /*--------------------------------------bio section-----------------------------------*/
 
-.bioMate {
+.bio-text {
     display: block;
     /*background-color: mediumaquamarine;*/
     -webkit-column-count: 2;
@@ -353,14 +353,17 @@ body {
     column-gap: 3%;
     -webkit-animation: fadeIn 150ms ease-in 0s 1 forwards;
     animation: fadeIn 150ms ease-in 0s 1 forwards;
+    height: 100%;
 }
 
-.bioMate>section {
+.bio-text>section {
     font-family: Arial, Helvetica, sans-serif;
     font-size: .9vw;
+    /*background-color: lightcoral;*/
+    height: 100%;
 }
 
-.imgBio {
+.bio-img {
     max-width: 90%;
 }
 
