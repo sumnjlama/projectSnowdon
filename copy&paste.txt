@@ -2,48 +2,32 @@
 <link rel="stylesheet" href="mediaQueries.css">
 
 ----------nav--------------
-<div class="top-sect big-pics">
+<div class="top-sect" id="big-pics">
         <header>
-            <div class="pg-title  header" id="pg-title">
+            <div class="pg-title" id="pg-title">
                 <span id="index-txt" class="txt-slct">Snowdon</span>
             </div>
         </header>
 
         <nav id="main-menu">
-            <ul>
-                <li><a href="index.html">Home</a>
-                </li>
-                <li><a class="nav-dec">Biography</a></li>
-                <li><a href="portfolioPage.html">Links</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-
-            </ul>
-        </nav>
-
+------------------------------------------------------------------------
+        
         <div id="ham-menu-wrapper" onclick="openMenu()" class="">
             <div class="ham-menu" id="bar-1"></div>
             <div class="ham-menu" id="bar-2"></div>
             <div class="ham-menu" id="bar-3"></div>
-        </div>
 
+-----------------------------------------------------------------
         <div id="slide-in-menu" class="menu-static">
-
             <div id="menu-close-button" class="">
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn x1"></div>
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn x2"></div>
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn-bck"></div>
             </div>
+            
             <ul id="mobile-menu">
-                <li><a href="index.html">Home</a>
-                </li>
-                <li><a href="bio.html">Biography</a></li>
-                <li><a href="portfolioPage.html">Links</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-
-        </div>
-    </div>
-
+---------------------------------------------
 -------js----------
 <script src="scripts.js"></script>
 
+#F3B239

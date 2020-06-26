@@ -36,15 +36,50 @@ let hideClsBtn = () => {
     }, 250);
 }
 
+let expandImage = (imgs) => {
+    document.getElementById('expand-images').style.display = 'flex';
+    let zoomPic = document.getElementById('expandable');
+    zoomPic.src = imgs.src;
+
+    let hideTopSect = () => {
+        document.getElementById("big-pics").style.display = 'none';
+    };
+    hideTopSect();
+}
+
+let showTopSect = () => {
+    document.getElementById("big-pics").style.display = 'grid';
+}
+
+function scrollIt() {
+    if (document.innerWidth > 992 || window.innerWidth > 992) {
+        document.onscroll = function scrollFunction() {
+            let navBar = document.getElementById("big-pics");
+            let theTitle = document.getElementById("index-txt");
+
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                navBar.style.height = "8vh";
+                
+
+                document.getElementById("nav-list").style.top = "0";
+            } else {
+                navBar.style.height = "20vh";
+
+                document.getElementById("nav-list").style.top = "5px";
+
+            }
+            
+        }; 
+        
+    };
+};
+scrollIt();
 
 
 
-
-
-
-
-
-
+/*let slideMenuHeight = () => {
+    document.getElementById("slide-in-menu").style.height = totHeight;
+}*/
 
 
 /*-----------------------------------Index slideshow-----------------------------------------
