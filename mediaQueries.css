@@ -94,7 +94,7 @@
 
     }
 
-    
+
 
     /*----------------------------------------------------------------*/
     .box-in {
@@ -142,6 +142,16 @@
     }
 
     /*---------------------------------------------------------------*/
+
+    .close-image {
+        font-size: 120px;
+        color: white;
+        top: -10px;
+        left: 80%;
+        height: 100px;
+        background-color: rgb(17, 17, 17);
+    }
+
     .const-1 {
         margin: 30px 30px 20px 30px;
 
@@ -156,20 +166,20 @@
     /*----medium monitors------*/
     /*----------------title--------------------*/
     .top-sect {
-        background-color: white;
+   background-color: #f3a616;
+
         font-size: 100%;
         height: 20vh;
         box-shadow: none;
-        /*-------*/
         position: fixed;
         width: 100%;
         z-index: 1000;
         transition: 0.15s ease-in;
-
     }
 
     .pg-title {
         margin-left: 50px;
+        color: white
     }
 
     .txt-slct {
@@ -215,8 +225,8 @@
     }
 
     nav>ul>li>a {
-        color: black;
-        font-weight: 700;
+        color: white;
+        font-weight: 500;
         font-size: 1.1rem;
         text-decoration: none;
         font-family: 'futura book';
@@ -230,13 +240,13 @@
 
 
     nav>ul>li>a:visited {
-        color: black;
+        color: white;
 
     }
 
     .nav-dec {
         color: transparent !important;
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid white;
         border-spacing: 4px;
     }
 
@@ -279,35 +289,41 @@
             animation: fadeInBlack 600ms ease-in 0s 1 forwards;*/
     }
 
-/*----------------------------contact page--------------------*/
-#contact-forms {
-    text-align: center;
-    color: white;
-    font-family: 'futura book';
-    padding-top: 23px;
-}
 
-#contact-forms>h3 {
-    padding: 5px;
-}
 
-.space-out {
-    padding: 5px;
-    margin: 5px;
-}
+    /*----------------------------contact page--------------------*/
+    .cont-contents {
+        top: 50px;
+    }
 
-.stretch-1 {
-    width: 190px;
-}
+    #contact-forms {
+        text-align: center;
+        color: white;
+        font-family: 'futura book';
+        padding-top: 23px;
+    }
 
-.stretch-2 {
-    width: 410px;
-}
+    #contact-forms>h3 {
+        padding: 5px;
+    }
 
-.stretch-3 {
-    height: 100px;
-    line-height: normal;
-}
+    .space-out {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .stretch-1 {
+        width: 190px;
+    }
+
+    .stretch-2 {
+        width: 395px;
+    }
+
+    .stretch-3 {
+        height: 100px;
+        line-height: normal;
+    }
 
     /*------------------------------------------------------------*/
     .close-image {
@@ -318,7 +334,7 @@
     .const-1 {
 
         position: relative;
-        top: 20vh;
+        top: 21vh;
         margin: 0px 50px 50px 50px;
 
     }
