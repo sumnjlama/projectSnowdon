@@ -42,7 +42,7 @@
 
 
             <div id="menu-close-button" onclick="closeMenu();hideClsBtn();" class="">
-                <div  class="menu-close-btn x1"></div>
+                <div class="menu-close-btn x1"></div>
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn x2"></div>
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn-bck"></div>
             </div>
@@ -57,9 +57,9 @@
         </div>
     </div>
 
-    <div class="fix-frame const-1" id="consts">
+    <div class="fix-frame const-1 gall-marg" id="consts">
         <div class="gallery " id="galleryBox" onclick="">
-            <img src="images/gallery/1.jpg" class="gallery--img" alt="pic1" onclick="expandImage(this)">
+            <img src="images/gallery/1.jpg" class="gallery--img" alt="pic1" onclick="expandImage(this) ">
             <img src="images/gallery/2.jpg" class="gallery--img" alt="pic2" onclick="expandImage(this)">
             <img src="images/gallery/3.jpg" class="gallery--img" alt="pic3" onclick="expandImage(this)">
             <img src="images/gallery/4.jpg" class="gallery--img" alt="pic4" onclick="expandImage(this)">
@@ -77,8 +77,10 @@
         <span onclick="this.parentElement.style.display = 'none';
         showTopSect();" class="close-image">&times;</span>
         <img id="expandable" alt="pic missing" class="box-in">
+        <button id="previouso" onclick = "nextImg(-1)"></button>
+        <button id="nextso" onclick = "nextImg(1)"></button>
     </div>
-    
+
 </body>
 <script src="scripts.js"></script>
 

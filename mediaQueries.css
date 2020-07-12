@@ -3,12 +3,6 @@
 @media screen and (min-width: 320px) {
 
     /*----Small devices, mobile phones-----*/
-    .top-sect {
-        /*background-color: mediumaquamarine;*/
-        font-size: 100%;
-        height: 90px;
-
-    }
 
     .pg-title {
         margin-left: 5%;
@@ -164,13 +158,12 @@
 @media (min-width: 992px) {
 
     /*----medium monitors------*/
+
     /*----------------title--------------------*/
     .top-sect {
-   background-color: #f3a616;
-
+        background-color: #ffffff;
         font-size: 100%;
         height: 20vh;
-        box-shadow: none;
         position: fixed;
         width: 100%;
         z-index: 1000;
@@ -179,7 +172,7 @@
 
     .pg-title {
         margin-left: 50px;
-        color: white
+        color: #303030;
     }
 
     .txt-slct {
@@ -225,12 +218,11 @@
     }
 
     nav>ul>li>a {
-        color: white;
-        font-weight: 500;
+        color: #303030;
+        font-weight: 600;
         font-size: 1.1rem;
         text-decoration: none;
         font-family: 'futura book';
-
     }
 
     nav>ul>li:hover {
@@ -238,15 +230,13 @@
         transition: transform .2s ease-in-out;
     }
 
-
     nav>ul>li>a:visited {
-        color: white;
-
+        color: #303030;
     }
 
     .nav-dec {
         color: transparent !important;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid #303030;
         border-spacing: 4px;
     }
 
@@ -263,13 +253,11 @@
 
     #galleryBox {
         position: relative;
-        background-color: ;
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 1fr 0px 1fr 0px 1fr;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
         grid-gap: 0px;
-        grid-auto-rows: 38vh;
+        grid-auto-rows: 400px;
     }
 
 
@@ -279,45 +267,46 @@
     }
 
     #galleryBox>img {
-        display: ;
         width: 100%;
         height: 100%;
         -o-object-fit: cover;
         object-fit: cover;
+        object-position: top;
         cursor: pointer;
         /*-webkit-animation: fadeInBlack 600ms ease-in 0s 1 forwards;
             animation: fadeInBlack 600ms ease-in 0s 1 forwards;*/
     }
 
-
-
     /*----------------------------contact page--------------------*/
+
     .cont-contents {
-        top: 50px;
+        padding: 20px;
+        height: 76vh;
+        align-content: space-between;
     }
 
-    #contact-forms {
-        text-align: center;
-        color: white;
-        font-family: 'futura book';
-        padding-top: 23px;
+    #cont-1 {
+        color: #ffffff;
     }
 
-    #contact-forms>h3 {
-        padding: 5px;
+    #cont-2 {
+        justify-content: space-evenly;
+
+    }
+
+    .cont-form-text>h2 {
+        margin: 10px;
+        font-weight: lighter;
+        color: #ffffff;
+        font-size: 20px;
     }
 
     .space-out {
         padding: 5px;
         margin: 5px;
-    }
-
-    .stretch-1 {
-        width: 190px;
-    }
-
-    .stretch-2 {
-        width: 395px;
+        width: 400px;
+        height: 30px;
+        border:none;
     }
 
     .stretch-3 {
@@ -325,68 +314,78 @@
         line-height: normal;
     }
 
-    /*------------------------------------------------------------*/
+    /*-----------------------------------------*/
     .close-image {
         left: 90%;
     }
 
-    /*---------------------------------------------------------------*/
+    /*-----------------contact page-----------*/
+    .cont-contents {
+        z-index: 150;
+    }
+
+    #contact-forms>button {
+        width: 400px;
+    }
+
+
+
+    .cont-back {
+        background-image: url(/images/gallery/1.jpg);
+        /*background-color: #ffc14d;*/
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 76vh;
+        opacity: 1;
+        z-index: 20;
+    }
+
+
+    .over-laid {
+        background-color: rgb(59, 59, 59);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 76vh;
+        opacity: .7;
+        z-index: 50;
+    }
+
+    /*--------------------------------------*/
+
     .const-1 {
-
         position: relative;
-        top: 21vh;
-        margin: 0px 50px 50px 50px;
+        top: 22vh;
+        margin: 0px 50px 0px 50px;
+    }
 
+
+    .gall-marg{
+        margin-bottom: 30px;
     }
 
     /*.fix-frame {
-        height: 75vh;
+        height: 76vh;
         overflow: auto;
     }*/
 }
 
-/*------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------*/
 
 @media (min-width: 1200px) {
 
     /*----large monitors-----*/
 
     /*-------------gallery section---------------*/
-    #galleryBox {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 0px 1fr 0px 1fr;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0px;
-        grid-auto-rows: 38vh;
-    }
-
-    #galleryBox>img:hover {
-        -webkit-filter: saturate(0.2);
-        filter: saturate(0);
-    }
-
-    #galleryBox>img {
-        width: 100%;
-        height: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
-        cursor: pointer;
-        /*-webkit-animation: fadeInBlack 600ms ease-in 0s 1 forwards;
-            animation: fadeInBlack 600ms ease-in 0s 1 forwards;*/
-    }
-
-    /*.fix-frame {
-        height: 75vh;
-        overflow: auto;
-    }*/
 
 }
-
 /*------------------------------------------------------------------------------------------*/
 
 @media (min-width:1400px) {
-    .top-sect {}
 
     .txt-slct::before {
         content: "Suman Lama: ";
