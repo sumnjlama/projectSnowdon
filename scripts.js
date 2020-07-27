@@ -35,17 +35,10 @@ let hideClsBtn = () => {
         menuCloseButton.style.display = "block";
     }, 250);
 }
-/*let expandImage = (imgs) => { 
-    
-    document.getElementById('expand-images').style.display = 'flex';//display of the active image
-    let zoomPic = document.getElementById('expandable');//class of the active image div
-    zoomPic.src = imgs.src;//active pic src = selected pic src
 
-    let hideTopSect = () => {//hides the top section
-        document.getElementById("big-pics").style.display = 'none';
-    };
-    hideTopSect();
-}*/
+
+
+
 let expandImage = (imgs) => {
     document.getElementById('expand-images').style.display = 'flex'; //display of the active image
     let zoomPic = document.getElementById('expandable'); //class of the active image div
@@ -70,28 +63,6 @@ let nextImg = (n) => {
         }
     }
 }
-
-
-
-/*let slideImg = (n) => {
-    var i; //for loop var declaration
-    var imgs = document.getElementsByClassName("gallery--img"); //images class name
-    if (n > imgs.length) {
-        slideIndex = 1
-    }; //if imgs ends it goes back to the first image
-    if (n < 1) {
-        slideIndex = imgs.length
-    }; //goes to last image if clicked previous on the 1st image
-
-    for (i = 0; i < imgs.length; i++) { //loops through all the images to hide its display
-        imgs[i].style.display = "none";
-    }
-    imgs[slideIndex - 1].style.display = "flex"; //display the selected image
-
-}
-slideImg(slideIndex);
-var slideIndex = 1; //default index number
-let nextImg = (n) => slideImg(slideIndex += n);*/
 
 
 
@@ -122,39 +93,6 @@ function scrollIt() {
     };
 };
 scrollIt();
-
-
-/*let slideMenuHeight = () => {
-    document.getElementById("slide-in-menu").style.height = totHeight;
-}*/
-
-
-/*-----------------------------------Index slideshow-----------------------------------------
-
-var autImgSlide = 0;
-img_slide();
-
-function img_slide() {
-    var x = document.getElementsByClassName("indexImg1");
-
-    for (var i = 0; i > x.length; i++) {
-        x[i].style.display = "none";
-    }
-
-    autImgSlide++;
-    if (autImgSlide > x.length) {
-        autImgSlide = 1
-    }
-    
-    x[autImgSlide - 1].style.display = " ";
-    setTimeout(img_slide, 2000);
-}*/
-
-
-
-
-
-
 
 
 /*------gallery -------------*/

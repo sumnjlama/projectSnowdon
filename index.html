@@ -12,23 +12,24 @@
 
 <body>
 
-    <div class="top-sect" id="big-pics">
+    <div class="top-sect" id="index-big-pics">
         <header>
             <div class="pg-title" id="pg-title">
                 <span id="index-txt" class="txt-slct">Snowdon</span>
             </div>
         </header>
 
-        <nav id="main-menu">
+        <!---<nav id="main-menu">
             <ul id="nav-list">
-                <li><a class="nav-dec">Home</a>
+                <li><a href="index.html">Home</a>
                 </li>
-                <li><a href="bio.html">Biography</a></li>
+                <li><a href="gallery.html">Photos</a></li>
+                <li><a href="bio.html" class="nav-dec">Biography</a></li>
                 <li><a href="portfolioPage.html">Portfolio</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
 
             </ul>
-        </nav>
+        </nav>----->
 
         <div id="ham-menu-wrapper" onclick="openMenu()" class="">
             <div class="ham-menu" id="bar-1"></div>
@@ -47,7 +48,7 @@
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn-bck"></div>
             </div>
             <ul id="mobile-menu">
-                <li><a href="index.html">Home</a>
+                <li><a href="gallery.html">Photos</a>
                 </li>
                 <li><a href="bio.html">Biography</a></li>
                 <li><a href="portfolioPage.html">Portfolio</a></li>
@@ -57,31 +58,25 @@
         </div>
     </div>
 
-    <div class="fix-frame const-1 gall-marg" id="consts">
-        <div class="gallery " id="galleryBox" onclick="">
-            <img src="images/gallery/1.jpg" class="gallery--img" alt="pic1" onclick="expandImage(this) ">
-            <img src="images/gallery/2.jpg" class="gallery--img" alt="pic2" onclick="expandImage(this)">
-            <img src="images/gallery/3.jpg" class="gallery--img" alt="pic3" onclick="expandImage(this)">
-            <img src="images/gallery/4.jpg" class="gallery--img" alt="pic4" onclick="expandImage(this)">
-            <img src="images/gallery/5.jpg" class="gallery--img" alt="pic5" onclick="expandImage(this)">
-            <img src="images/gallery/6.jpg" class="gallery--img" alt="pic6" onclick="expandImage(this)">
-            <img src="images/gallery/7.jpg" class="gallery--img" alt="pic7" onclick="expandImage(this)">
-            <img src="images/gallery/8.jpg" class="gallery--img" alt="pic8" onclick="expandImage(this)">
-            <img src="images/gallery/9.jpg" class="gallery--img" alt="pic9" onclick="expandImage(this)">
-            <img src="images/gallery/10.jpg" class="gallery--img" alt="pic10" onclick="expandImage(this)">
-            <img src="images/gallery/11.jpg" class="gallery--img" alt="pic11" onclick="expandImage(this)">
-            <img src="images/gallery/12.jpg" class="gallery--img" alt="pic12" onclick="expandImage(this)">
-        </div>
-    </div>
-    <div id="expand-images" class="expand-img box-in">
-        <span onclick="this.parentElement.style.display = 'none';
-        showTopSect();" class="close-image">&times;</span>
-        <img id="expandable" alt="pic missing" class="box-in">
-        <button id="previouso" onclick = "nextImg(-1)"></button>
-        <button id="nextso" onclick = "nextImg(1)"></button>
-    </div>
+    <div id="index-vid--container">`
+        <video id="index-vid" muted autoplay src="images/indexVid.m4v"></video>
 
+        <span>
+            <nav id="index-main-menu">
+                <ul id="index-nav-list">
+                    
+                    <li><a href="gallery.html">Photos</a></li>
+                    <li><a href="bio.html" >Biography</a></li>
+                    <li><a href="portfolioPage.html">Portfolio</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+    
+                </ul>
+            </nav>
+        </span>
+
+    </div>
 </body>
 <script src="scripts.js"></script>
+
 
 </html>

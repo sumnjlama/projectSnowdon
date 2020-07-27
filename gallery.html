@@ -5,25 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suman Lama: Snowdonia</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaQueries.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="top-sect big-pics">
+
+    <div class="top-sect" id="big-pics">
         <header>
-            <div class="pg-title  header" id="pg-title">
+            <div class="pg-title" id="pg-title">
                 <span id="index-txt" class="txt-slct">Snowdon</span>
             </div>
         </header>
 
         <nav id="main-menu">
-            <ul>
-                <li><a href="index.html">Home</a>
-                </li>
-                <li><a class="nav-dec">Biography</a></li>
-                <li><a href="portfolioPage.html">Links</a></li>
+            <ul id="nav-list">
+                <li><a href="gallery.html" class="nav-dec">Photos</a></li>
+                <li><a href="bio.html">Biography</a></li>
+                <li><a href="portfolioPage.html">Portfolio</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
 
             </ul>
@@ -37,20 +38,47 @@
 
         <div id="slide-in-menu" class="menu-static">
 
-            <div id="menu-close-button" class="">
-                <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn x1"></div>
+
+
+
+            <div id="menu-close-button" onclick="closeMenu();hideClsBtn();" class="">
+                <div class="menu-close-btn x1"></div>
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn x2"></div>
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn-bck"></div>
             </div>
             <ul id="mobile-menu">
-                <li><a href="index.html">Home</a>
+                <li><a href="gallery.html">Photos</a>
                 </li>
                 <li><a href="bio.html">Biography</a></li>
-                <li><a href="portfolioPage.html">Links</a></li>
+                <li><a href="portfolioPage.html">Portfolio</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
 
         </div>
+    </div>
+
+    <div class="const-1 gall-marg" id="consts">
+        <div class="gallery " id="galleryBox" onclick="">
+            <img src="images/gallery/1.jpg" class="gallery--img" alt="pic1" onclick="expandImage(this) ">
+            <img src="images/gallery/2.jpg" class="gallery--img" alt="pic2" onclick="expandImage(this)">
+            <img src="images/gallery/3.jpg" class="gallery--img" alt="pic3" onclick="expandImage(this)">
+            <img src="images/gallery/4.jpg" class="gallery--img" alt="pic4" onclick="expandImage(this)">
+            <img src="images/gallery/5.jpg" class="gallery--img" alt="pic5" onclick="expandImage(this)">
+            <img src="images/gallery/6.jpg" class="gallery--img" alt="pic6" onclick="expandImage(this)">
+            <img src="images/gallery/7.jpg" class="gallery--img" alt="pic7" onclick="expandImage(this)">
+            <img src="images/gallery/8.jpg" class="gallery--img" alt="pic8" onclick="expandImage(this)">
+            <img src="images/gallery/9.jpg" class="gallery--img" alt="pic9" onclick="expandImage(this)">
+            <img src="images/gallery/10.jpg" class="gallery--img" alt="pic10" onclick="expandImage(this)">
+            <img src="images/gallery/11.jpg" class="gallery--img" alt="pic11" onclick="expandImage(this)">
+            <img src="images/gallery/12.jpg" class="gallery--img" alt="pic12" onclick="expandImage(this)">
+        </div>
+    </div>
+    <div id="expand-images" class="expand-img box-in">
+        <div onclick="this.parentElement.style.display = 'none';
+        showTopSect();" class="close-image"><span>&times</span></div>
+        <img id="expandable" alt="pic missing" class="box-in">
+        <button id="previouso" class="click-btns" onclick="nextImg(-1)"><span>&#8249;</span></button>
+        <button id="nextso" class="click-btns" onclick="nextImg(1)"><span>&#8250;</span></button>
     </div>
 
 </body>

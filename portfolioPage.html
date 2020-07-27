@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suman Lama: Snowdonia</title>
+    <a><title>Suman Lama: Snowdonia</title></a>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaQueries.css">
 
@@ -20,12 +20,11 @@
         </header>
 
         <nav id="main-menu">
-            <ul>
-                <li><a href="index.html">Home</a>
-                </li>
-                <li><a href="bio.html">Biography</a></li>
-                <li><a class="nav-dec">Portfolio</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+            <ul id="nav-list">
+                <li><a href="gallery.html">Photos</a></li>
+                <li><a href="bio.html" >Biography</a></li>
+                <li><a href="portfolioPage.html" class="nav-dec">Portfolio</a></li>
+                <li><a href="contacts.html"  >Contacts</a></li>
 
             </ul>
         </nav>
@@ -37,12 +36,15 @@
         </div>
 
         <div id="slide-in-menu" class="menu-static">
-            <div id="menu-close-button" class="">
-                <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn x1"></div>
+
+
+
+
+            <div id="menu-close-button" onclick="closeMenu();hideClsBtn();" class="">
+                <div class="menu-close-btn x1"></div>
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn x2"></div>
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn-bck"></div>
             </div>
-
             <ul id="mobile-menu">
                 <li><a href="index.html">Home</a>
                 </li>
@@ -50,6 +52,7 @@
                 <li><a href="portfolioPage.html">Portfolio</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
+
         </div>
     </div>
 
