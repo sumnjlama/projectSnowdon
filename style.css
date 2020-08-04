@@ -51,6 +51,15 @@ body {
     display: none;
 }
 
+.a-nodec {
+    text-decoration: none;
+    color: rgb(197, 3, 3);
+}
+
+.a-nodec:visited {
+    color: rgb(197, 3, 3);
+}
+
 /*--------------------------------------Top Bar Container-----------------------------------*/
 
 .top-sect {
