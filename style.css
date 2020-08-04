@@ -390,7 +390,7 @@ button:focus {
     margin-top: 10px;
     margin: auto;
     font-family: 'futura book';
-    background-color: khaki;
+    /*background-color: khaki;*/
     position: relative;
     color: #303030;
     max-width: 900px;
@@ -417,7 +417,7 @@ button:focus {
     padding: 10px 0px;
     font-size: 25px;
     word-wrap: break-word;
-    background-color: tomato;
+    /*background-color: tomato;*/
 }
 
 #cont-2 {
