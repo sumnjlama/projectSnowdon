@@ -16,6 +16,7 @@
         width: 70%;
     }
 }
+
 #cont-back {
     background-image: url(images/justTip.png);
     /*background-color: #ffc14d;*/
@@ -23,14 +24,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
-     top: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     opacity: .92;
     z-index: 20;
     filter: grayscale(100%);
-    /*animation: fadeIn .2s ease-in 0s 1 forwards; */
+    animation: fadeIn .5s ease-in 0s 1 forwards;
 }
+
 /*------------------------------------------------------------------------------------------*/
 
 @media (min-width: 576px) {
@@ -78,6 +80,7 @@
         justify-content: space-evenly;
 
     }
+
     .space-out {
         width: 400px;
 
@@ -208,6 +211,7 @@
     .fix-frame {
         height: 78vh;
     }
+
     /*----------------title--------------------*/
     #index-big-pics {
         display: none;
@@ -391,7 +395,7 @@
     }
 
     .bio-text {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
 
 
