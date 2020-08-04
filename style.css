@@ -398,7 +398,7 @@ button:focus {
     justify-content: center;
     overflow: scroll;
     height: 100%;
-    animation: fadeIn 1.2s ease-in 0s 1 forwards;
+    animation: fadeIn .9s ease-in 0s 1 forwards;
     z-index: 100;
 }
 
@@ -482,7 +482,7 @@ button:focus {
     border: none;
     color: white;
     font-size: 18px;
-    animation: fadeIn .5s ease-in 0s 1 forwards;
+    /*animation: fadeIn .5s ease-in 0s 1 forwards;*/
     cursor: pointer;
     border-radius: 1px;
     margin-top: 10px;
