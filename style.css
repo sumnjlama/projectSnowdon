@@ -398,7 +398,7 @@ button:focus {
     justify-content: center;
     overflow: scroll;
     height: 100%;
-    animation: fadeIn .5s ease-in 0s 1 forwards;
+    animation: fadeIn 1.2s ease-in 0s 1 forwards;
     z-index: 100;
 }
 
@@ -431,21 +431,21 @@ button:focus {
     /*box-shadow:inset 0px 0px 2px #ca922a;*/
 }
 
-#cont-2>a:nth-child(1) {
-    animation: fadeIn .5s ease-in 0s 1 forwards;
+/*#cont-2>a:nth-child(1) {
+    animation: fadeIn .8s ease-in 0s 1 forwards;
 }
 
 #cont-2>a:nth-child(2) {
-    animation: fadeIn .7s ease-in 0s 1 forwards;
+    animation: fadeIn 1s ease-in 0s 1 forwards;
 }
 
 #cont-2>a:nth-child(3) {
-    animation: fadeIn .9s ease-in 0s 1 forwards;
+    animation: fadeIn 1.2s ease-in 0s 1 forwards;
 }
 
 #cont-2>a:nth-child(4) {
-    animation: fadeIn 1.1s ease-in 0s 1 forwards;
-}
+    animation: fadeIn 1.4s ease-in 0s 1 forwards;
+}*/
 
 .social-icons {
     width: 42px;
@@ -488,7 +488,6 @@ button:focus {
     margin-top: 10px;
 }
 
-
 .space-out {
     padding: 5px;
     margin: 5px;
@@ -511,47 +510,14 @@ button:focus {
 /*------Outside the container-------*/
 
 /*------------------------------------------------------------------------------------------*/
-
-@-webkit-keyframes fadeInBlack {
-    0% {
-        opacity: 0.5;
-        -webkit-filter: saturate(0);
-        filter: saturate(0)
+@keyframes slideUp {
+    from{
+        top: 50%;
+    }
+    to{
+        top:0;
     }
 
-    30% {
-        opacity: 1;
-    }
-
-    50% {
-        -webkit-filter: saturate(0);
-        filter: saturate(0);
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInBlack {
-    0% {
-        opacity: 0.5;
-        -webkit-filter: saturate(0);
-        filter: saturate(0)
-    }
-
-    30% {
-        opacity: 1;
-    }
-
-    50% {
-        -webkit-filter: saturate(0);
-        filter: saturate(0);
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 @-webkit-keyframes fadeIn {
