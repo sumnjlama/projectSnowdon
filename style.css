@@ -41,12 +41,11 @@ body {
 
 }
 
-/*
+
 .fix-frame {
-    height: 85vh;
     overflow: auto;
 }
-*/
+
 
 ::-webkit-scrollbar {
     display: none;
@@ -62,7 +61,7 @@ body {
     font-size: 100%;
     height: 100px;
     position: relative;
-    /*box-shadow: 0px 0px 2px rgb(236, 236, 236);*/
+    box-shadow: 0px 0px 2px rgb(228, 228, 228);
     transition: 0.2s ease-in;
     z-index: 200;
     color: #303030;
@@ -365,17 +364,15 @@ button:focus {
 .bio-text {
     /*background-color: mediumaquamarine;*/
     animation: fadeIn .9s ease-in 0s 1 forwards;
-    height: 100%;
     max-width: 1980px;
     margin: auto;
 }
 
 .bio-text>section>p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.7;
     /*background-color: lightcoral;*/
-    height: 100%;
     text-align: justify;
 }
 
@@ -390,20 +387,21 @@ button:focus {
 .cont-contents {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin-top: 10px;
+    margin: auto;
     font-family: 'futura book';
-    /*background-color: khaki;*/
+    background-color: khaki;
     position: relative;
-    color: 303030;
+    color: #303030;
     max-width: 900px;
-    top: 0;
     justify-content: center;
-
+    overflow: scroll;
+    height: 100%;
 }
 
 .cont-contents>hr {
     /*border: 2px dashed white;*/
-    width: inherit;
+    width: 100%;
 }
 
 .cont-texts {
@@ -411,7 +409,6 @@ button:focus {
 }
 
 #cont-1 {
-    overflow: hidden;
     text-align: center;
 }
 
@@ -420,6 +417,7 @@ button:focus {
     padding: 10px 0px;
     font-size: 25px;
     word-wrap: break-word;
+    background-color: tomato;
 }
 
 #cont-2 {
@@ -475,11 +473,10 @@ button:focus {
 }
 
 #contact-forms>button {
-    max-width: 150px;
+    width: 150px;
     height: 35px;
     background-color: #F3B239;
     border: none;
-    box-shadow: 0px 0px 3px rgb(100, 100, 100);
     color: white;
     font-size: 18px;
     animation: fadeIn .5s ease-in 0s 1 forwards;
@@ -492,14 +489,13 @@ button:focus {
     padding: 10px;
     margin: 8px 0;
     border-radius: 2px;
-    border: none;
     width: 90%;
-    border: 1px solid black;
+    border: 1px solid #303030;
 }
 
 .space-out:focus {
     outline-width: 0;
-    background-color: #f1f1f1;
+    border: 1px solid #F3B239;
 }
 
 .stretch-3 {

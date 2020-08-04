@@ -166,24 +166,26 @@
 
 }
 
-/*------------------------------------------------------------------------------------------@media (min-aspect-ratio: 16/9){
+/*------------------------------------------------------------------------------------------*/
+@media (min-aspect-ratio: 16/9){
         #index-vid {
             width: 100%;
             height: auto;
         }
+        body {
+            background-color: teal;
+        }
 }
 @media (max-aspect-ratio: 16/9){
-    #index-vid {
-        width: auto;
-        height: 100%;
-
-    }
-}*/
+    
+}
 
 @media (min-width: 992px) {
 
     /*----medium monitors------*/
-
+    .fix-frame {
+        height: 78vh;
+    }
     /*----------------title--------------------*/
     #index-big-pics {
         display: none;
@@ -366,17 +368,21 @@
 
     }
 
+    .bio-text {
+        margin-bottom: 30px;
+    }
+
 
     /*----------------------------contact page--------------------*/
 
     .cont-contents {
         padding: 20px;
-        height: 76vh;
         align-content: space-between;
+        z-index: 150;
     }
 
     #cont-1 {
-        color: #ffffff;
+        color: #303030;
     }
 
     #cont-2 {
@@ -387,7 +393,7 @@
     .cont-form-text>h2 {
         margin: 10px;
         font-weight: lighter;
-        color: #ffffff;
+        color: #303030;
         font-size: 20px;
     }
 
@@ -396,7 +402,6 @@
         margin: 5px;
         width: 400px;
         height: 30px;
-        border: none;
     }
 
     .stretch-3 {
@@ -404,23 +409,16 @@
         line-height: normal;
     }
 
-    /*-----------------------------------------*/
-
-    /*-----------------contact page-----------*/
-    .cont-contents {
-        z-index: 150;
-    }
-
     #contact-forms>button {
         width: 400px;
     }
 
+    /*-----------------------------------------*/
 
-
-    .cont-back {
+    /*.cont-back {
         background-image: url(/images/gallery/1.jpg);
-        /*background-color: #ffc14d;*/
-        background-position: top;
+        /*background-color: #ffc14d;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -440,7 +438,7 @@
         height: 76vh;
         opacity: .7;
         z-index: 50;
-    }
+    }*/
 
     /*--------------------------------------*/
 
@@ -452,6 +450,7 @@
 
 
     .gall-marg {
+        margin-bottom: 30px;
     }
 
 

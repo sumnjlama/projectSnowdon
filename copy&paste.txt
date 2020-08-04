@@ -31,6 +31,7 @@
 <script src="scripts.js"></script>
 
 #F3B239
+#303030
 ------------------------
 #galleryBox {
     display: flex;
