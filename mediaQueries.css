@@ -248,7 +248,7 @@
         width: 100%;
         top: 0;
         cursor: pointer;
-        animation: changeToWhite .9s 8s ease-in forwards;
+        animation: changeToWhite .9s 7.5s ease-in forwards;
     }
 
     #index-main-menu {
@@ -259,7 +259,7 @@
         margin: 0 auto;
         display: flex;
         align-items: center;
-        animation: fadeIn 1s 9s ease-in forwards;
+        animation: fadeIn 1s 8s ease-in forwards;
         opacity: 0;
     }
 
