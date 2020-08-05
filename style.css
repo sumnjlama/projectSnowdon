@@ -382,7 +382,7 @@ button:focus {
 }
 
 .bio-text>section>p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.7;
     /*background-color: lightcoral;*/
     text-align: justify;
