@@ -94,6 +94,10 @@ function scrollIt() {
 };
 scrollIt();
 
+let openSite = (url) => {
+    let site = window.open(url);
+}
+
 
 /*------gallery -------------*/
 
