@@ -97,13 +97,3 @@ scrollIt();
 let openSite = (url) => {
     let site = window.open(url);
 }
-
-
-/*------gallery -------------*/
-
-/*var galleryImg = document.getElementsByClassName(gallery_img);
-
-function enlargePhotos() {
-    var galleryImg = document.getElementsByClassName("gallery_img");
-    galleryImg.style.display = 'none';
-};*/
