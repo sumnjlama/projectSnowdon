@@ -379,7 +379,7 @@ button:focus {
     font-size: 1rem;
     line-height: 1.7;
     /*background-color: lightcoral;*/
-    text-align: justify;
+    text-align: left;
 }
 
 .bio-img {
@@ -651,10 +651,6 @@ button:focus {
         font-size: 38px;
     }
 
-    #index-txt::after {
-        content: ", 2018";
-        font-weight: 800;
-    }
 
     #bio-txt::after {
         content: " & the site";
@@ -755,7 +751,7 @@ button:focus {
     opacity: 1;
 }*/
     #galleryBox {
-        column-count: 2;
+        column-count: 3;
         display: block;
     }
 
@@ -1063,7 +1059,7 @@ button:focus {
 
     /*-------------gallery section---------------*/
     #galleryBox {
-        column-count: 3;
+        column-count: 4;
     }
 }
 
