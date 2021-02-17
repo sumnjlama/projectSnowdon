@@ -33,7 +33,6 @@ body {
 
 }
 
-
 .fix-frame {
     overflow: auto;
 }
@@ -66,7 +65,8 @@ body {
     transition: 0.2s ease-in;
     z-index: 200;
     color: #303030;
-    background-color: #fdfdfd;
+    /* background-color: #fdfdfd; */
+    background: transparent;
 }
 
 /*--------------------------------------Title -----------------------------------*/
@@ -124,15 +124,13 @@ body {
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     animation: fadeIn .5s ease-in 0s 1 forwards;
-
 }
 
 .ham-menu {
     height: 7px;
     width: 50%;
-    background-color: #000000;
+    background-color: #F3B239;
     display: block;
-
 }
 
 
@@ -147,7 +145,6 @@ body {
 .menu-static {
     margin-left: 100%;
     display: none;
-
 }
 
 .menu-slide-in {
@@ -155,7 +152,6 @@ body {
     background-color: #F3B239;
     -webkit-animation: slide-in-menu 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0s 1 forwards;
     animation: slide-in-menu 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000) 0s 1 forwards;
-
 }
 
 .menu-slide-out {
@@ -232,7 +228,6 @@ body {
 
 #mobile-menu>li>a:visited {
     color: white;
-
 }
 
 #mobile-menu>li>a {
@@ -251,6 +246,20 @@ body {
 /*----------------------------*/
 #index-vid--container {
     display: none;
+}
+
+#mobile-background {
+    z-index: 100;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    background: url(/images/gallery/11.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeIn .9s ease-in 0s 1 forwards;
+
 }
 
 /*------------------gallery--------------*/
