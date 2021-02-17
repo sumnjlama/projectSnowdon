@@ -824,6 +824,10 @@ button:focus {
         top: 0;
     }
 
+    #mobile-background {
+        display: none;
+    }
+
     #index-vid--container {
         display: block;
         height: 100%;
