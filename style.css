@@ -1,5 +1,10 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+@font-face {
+    font-family: "futura book";
+    src: url(fonts/Futura\ Std\ Book.ttf);
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -19,18 +24,9 @@ body {
 }
 
 
-@font-face {
-    font-family: "futura book";
-    src: url(fonts/Futura\ Std\ Book.ttf);
-}
-
-
-
 /*-----------------------------------------------*/
 .const-1 {
     margin: 10px 10px 10px 10px;
-    /*background-color: salmon;*/
-
 }
 
 .fix-frame {
@@ -65,14 +61,12 @@ body {
     transition: 0.2s ease-in;
     z-index: 200;
     color: #303030;
-    /* background-color: #fdfdfd; */
     background: transparent;
 }
 
 /*--------------------------------------Title -----------------------------------*/
 
 .pg-title {
-    /*background-color: red;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -84,11 +78,9 @@ body {
     justify-content: left;
     height: 100%;
     top: 0;
-    /*animation: fadeIn .2s ease-in 0s 1 forwards;*/
 }
 
 .txt-slct {
-    /*background-color: yellow;*/
     font-family: 'futura book';
     font-weight: 800;
     font-size: 2rem;
@@ -106,7 +98,6 @@ body {
     cursor: pointer;
     height: 60%;
     width: 80px;
-    /*background-color: violet;*/
     justify-self: flex-end;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -162,7 +153,6 @@ body {
 
 #menu-close-button {
     width: 48px;
-    /*background-color: white;*/
     height: 60px;
     position: absolute;
     z-index: 302;
@@ -207,7 +197,6 @@ body {
 #mobile-menu {
     display: flex;
     position: relative;
-    /*background-color: red;*/
     flex-direction: column;
     height: 90%;
     top: 7%;
@@ -217,7 +206,6 @@ body {
 }
 
 #mobile-menu>li {
-    /*background-color: khaki; */
     list-style: none;
     width: 50%;
     text-align: center;
@@ -236,7 +224,6 @@ body {
     font-size: 1.4rem;
     text-decoration: none;
     font-family: 'futura book';
-    /*background-color: lightblue;*/
     height: 100%;
     width: 100%;
     display: block;
@@ -318,10 +305,6 @@ body {
 
 #previouso {
     text-align: start;
-    /*border-top: 50px solid rgb(17, 17, 17);
-    border-right: 100px solid red;
-    border-bottom: 50px solid rgb(17, 17, 17);
-    border-left: 0px;*/
     left: 0;
     cursor: pointer;
 }
@@ -333,10 +316,6 @@ body {
     border: none;
     text-align: right;
     vertical-align: middle;
-    /*border-top: 50px solid rgb(17, 17, 17);
-    border-right: 100px solid red;
-    border-bottom: 50px solid rgb(17, 17, 17);
-    border-left: 0px;*/
     right: 0;
     cursor: pointer;
 
@@ -356,12 +335,10 @@ button:focus {
     cursor: pointer;
     height: 50px;
     animation: fadeIn .9s ease-in 0s 1 forwards;
-    /*background-color: teal;*/
     justify-content: flex-end;
 }
 
 .close-image>span {
-    /*background-color: tomato;*/
     font-size: 100px;
     display: flex;
     align-items: center;
@@ -374,7 +351,6 @@ button:focus {
 /*---------------bio section--------------*/
 
 .bio-text {
-    /*background-color: mediumaquamarine;*/
     animation: fadeIn .9s ease-in 0s 1 forwards;
     max-width: 1980px;
     margin: auto;
@@ -387,7 +363,6 @@ button:focus {
 .bio-text>section>p {
     font-size: 1rem;
     line-height: 1.7;
-    /*background-color: lightcoral;*/
     text-align: left;
 }
 
@@ -402,10 +377,8 @@ button:focus {
 .cont-contents {
     display: flex;
     flex-direction: column;
-    /*margin-top: 10px;*/
     margin: auto;
     font-family: 'futura book';
-    /*background-color: khaki;*/
     position: relative;
     color: #303030;
     max-width: 900px;
@@ -417,7 +390,6 @@ button:focus {
 }
 
 .cont-contents>hr {
-    /*border: 2px dashed white;*/
     width: 100%;
 }
 
@@ -436,7 +408,6 @@ button:focus {
     font-weight: lighter;
     font-size: 25px;
     word-wrap: break-word;
-    /*background-color: tomato;*/
 }
 
 #cont-2 {
@@ -444,36 +415,12 @@ button:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*box-shadow:inset 0px 0px 2px #ca922a;*/
 }
-
-/*#cont-2>a:nth-child(1) {
-    animation: fadeIn .8s ease-in 0s 1 forwards;
-}
-
-#cont-2>a:nth-child(2) {
-    animation: fadeIn 1s ease-in 0s 1 forwards;
-}
-
-#cont-2>a:nth-child(3) {
-    animation: fadeIn 1.2s ease-in 0s 1 forwards;
-}
-
-#cont-2>a:nth-child(4) {
-    animation: fadeIn 1.4s ease-in 0s 1 forwards;
-}*/
 
 .social-icons {
     width: 42px;
     height: 42px;
 }
-
-/*.cont-contents>hr {
-    position: relative;
-    width: 85%;
-    align-self: center;
-    border: 1px dashed #F3B239;
-}*/
 
 .cont-form-text>h2 {
     margin: 10px;
@@ -498,7 +445,6 @@ button:focus {
     border: none;
     color: white;
     font-size: 18px;
-    /*animation: fadeIn .5s ease-in 0s 1 forwards;*/
     cursor: pointer;
     border-radius: 1px;
     margin-top: 10px;
@@ -525,95 +471,6 @@ button:focus {
 
 /*------Outside the container-------*/
 
-/*------------------------------------------------------------------------------------------*/
-@keyframes slideUp {
-    from {
-        top: 50%;
-    }
-
-    to {
-        top: 0;
-    }
-
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-
-@-webkit-keyframes slide-in-menu {
-    0% {
-        margin-left: 100%;
-    }
-
-    100% {
-        margin-left: 20%;
-    }
-
-}
-
-
-@keyframes slide-in-menu {
-    0% {
-        margin-left: 100%;
-    }
-
-    100% {
-        margin-left: 20%;
-    }
-
-}
-
-@-webkit-keyframes slide-out-menu {
-    0% {
-        margin-left: 20%;
-    }
-
-    100% {
-        margin-left: 100%;
-    }
-}
-
-@keyframes slide-out-menu {
-    0% {
-        margin-left: 20%;
-    }
-
-    100% {
-        margin-left: 100%;
-    }
-}
-
-@keyframes changeToWhite {
-    from {
-        background-color: transparent;
-    }
-
-    to {
-        background-color: rgb(19, 19, 19);
-
-    }
-
-}
-
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 @media screen and (min-width: 320px) {
 
@@ -634,7 +491,6 @@ button:focus {
 
 #cont-back {
     background-image: url(images/justTip.png);
-    /*background-color: #ffc14d;*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -697,12 +553,6 @@ button:focus {
 
     }
 
-    /*--------------------------------------------------------------------
-    
-    .close-image {
-        left: 85%;
-    }*/
-
     /*-------------------------------------------------------------------*/
     .const-1 {
         margin: 20px 20px;
@@ -731,34 +581,6 @@ button:focus {
         box-sizing: border-box;
     }
 
-    /*.expand-img {
-    height: 100vh;
-    min-width: 100vw;
-    position: fixed;
-    background-color: rgb(17, 17, 17);
-    opacity: 1;
-    z-index: 400;
-    top:0;
-    justify-content: center;
-    align-items: center;
-}
-
-#expandable {
-    max-width:80%;
-    vertical-align: middle;
-    
-}
-
-.close-image{
-    font-size: 100px;
-    top: 30px;
-    left: 90%;
-    color: white;
-    position: absolute;
-    z-index: 401;
-    cursor: pointer;
-    opacity: 1;
-}*/
     #galleryBox {
         column-count: 3;
         display: block;
@@ -778,22 +600,6 @@ button:focus {
         margin-left: 20px;
         margin-bottom: 20px;
     }
-
-    /*---------------------------------------------------------------
-
-    .close-image {
-        width: 80px;
-        font-size: 100px;
-        left: 90vw;
-        background-color: transparent;
-
-        display: flex;
-        justify-content: center;
-    }
-
-    .close-image>span {
-        opacity: 0.9;
-    }*/
 
     .const-1 {
         margin: 30px 30px 20px 30px;
@@ -1038,15 +844,6 @@ button:focus {
 
     /*-----------------------------------------*/
 
-    /*.over-laid {
-        background-color: rgb(59, 59, 59);
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 76vh;
-        opacity: .7;
-        z-index: 50;
-    }*/
 
     /*--------------------------------------*/
 
@@ -1095,5 +892,93 @@ button:focus {
 
     }
 
+
+}
+
+/*------------------------------------------------------------------------------------------*/
+@keyframes slideUp {
+    from {
+        top: 50%;
+    }
+
+    to {
+        top: 0;
+    }
+
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes slide-in-menu {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 20%;
+    }
+
+}
+
+
+@keyframes slide-in-menu {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 20%;
+    }
+
+}
+
+@-webkit-keyframes slide-out-menu {
+    0% {
+        margin-left: 20%;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes slide-out-menu {
+    0% {
+        margin-left: 20%;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes changeToWhite {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: rgb(19, 19, 19);
+
+    }
 
 }
