@@ -61,7 +61,8 @@ body {
     transition: 0.2s ease-in;
     z-index: 200;
     color: #303030;
-    background: transparent;
+
+    background: #ffffff;
 }
 
 /*--------------------------------------Title -----------------------------------*/
@@ -88,6 +89,7 @@ body {
     text-align: start;
     transition: 0.2s ease-in;
 }
+
 
 /*--------------------------------Ham Nav section----------------------*/
 #main-menu {
@@ -120,10 +122,23 @@ body {
 .ham-menu {
     height: 7px;
     width: 50%;
-    background-color: #F3B239;
+    
     display: block;
+    box-shadow: 0px 2px 5px #41414115;
 }
 
+.gallery-ham-menu {
+    background-color: #F3B239;
+}
+
+.blog-ham-menu{
+    background-color: rgb(241, 163, 176);
+
+}
+
+.contacts-ham-menu {
+    background-color: rgb(107, 208, 248);
+}
 
 /*--------slide in menu--------*/
 #slide-in-menu {
@@ -186,12 +201,17 @@ body {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+    box-shadow: 2px 3px 2px #27272731;
+
 }
 
 .x2 {
     -webkit-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
     transform: rotate(135deg);
+    box-shadow: 2px 3px 2px #27272731;
+
+
 }
 
 #mobile-menu {
@@ -203,6 +223,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     z-index: 200;
+
 }
 
 #mobile-menu>li {
@@ -228,9 +249,16 @@ body {
     width: 100%;
     display: block;
     line-height: 1.5;
+    text-shadow: 2px 3px 2px #27272731;
+
 }
 
 /*----------------------------*/
+
+#index-big-pics {
+        display: none;
+    }
+    
 #index-vid--container {
     display: none;
 }
@@ -246,10 +274,54 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     animation: fadeIn .9s ease-in 0s 1 forwards;
+}
+
+#index-mobile-background-cover{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(68, 68, 68);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    animation: fadeInSoft .8s ease-in 1.2s 1 forwards;
+}
+
+
+#index-mobile-menu {
+    list-style: none;
+        height: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 200;
+        opacity: 0;
+    animation: fadeIn 2s ease-in 2s 1 forwards;
 
 }
 
+#index-mobile-menu>li>a:visited {
+    color: white;
+}
+
+#index-mobile-menu>li>a {
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-family: 'futura book';
+    height: 100%;
+    width: 100%;
+    display: block;
+    line-height: 1.5;
+    text-shadow: 2px 3px 2px #27272731;
+
+}
+
+
 /*------------------gallery--------------*/
+
 #galleryBox {
     display: flex;
     flex-direction: column;
@@ -271,6 +343,8 @@ body {
     transform: scale(1.01);
     transition: transform 0.1s ease;
 }
+
+.gallery--img {}
 
 .expand-img {
     display: none;
@@ -348,9 +422,11 @@ button:focus {
 }
 
 
-/*---------------bio section--------------*/
+/*---------------blog section--------------*/
 
-.bio-text {
+
+
+.blog-text {
     animation: fadeIn .9s ease-in 0s 1 forwards;
     max-width: 1980px;
     margin: auto;
@@ -360,19 +436,29 @@ button:focus {
 
 }
 
-.bio-text>section>p {
-    font-size: 1rem;
-    line-height: 1.7;
+.blog-text>section>h2 {
+    font-size: 24px;
+}
+
+.blog-text>section>p {
+    font-size: 17px;
+    line-height: 1.6;
     text-align: left;
 }
 
-.bio-img {
+.blog-img {
     max-width: 100%;
     position: relative;
     margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 0px 1px 4px #5858583f;
 }
 
+/* ----------------------Portfolio section-------------------------------- */
+
 /*----------------contact section------------------------*/
+
+
 
 .cont-contents {
     display: flex;
@@ -395,13 +481,11 @@ button:focus {
 
 .cont-texts {
     text-align: center;
-    
 }
 
 #cont-1 {
     text-align: center;
-    padding:25px 0px;
-
+    padding: 25px 0px;
 }
 
 #cont-1>p {
@@ -508,7 +592,7 @@ button:focus {
 
 @media (min-width: 576px) {
     .top-sect {
-        height: 160px;
+        height: 140px;
         margin-bottom: 5px;
     }
 
@@ -517,7 +601,7 @@ button:focus {
     }
 
 
-    #bio-txt::after {
+    #blog-txt::after {
         content: " & the site";
         font-weight: 800;
     }
@@ -594,11 +678,11 @@ button:focus {
 
     /*---------------------------------------------------------------*/
 
-    .bio-img {
+    .blog-img {
         float: right;
         max-width: 50%;
-        margin-left: 20px;
-        margin-bottom: 20px;
+        margin-left: 40px;
+        margin-bottom: 40px;
     }
 
     .const-1 {
@@ -614,13 +698,11 @@ button:focus {
 
     /*----medium monitors------*/
     .fix-frame {
-        height: 78vh;
+        /* height: 78vh; */
     }
 
     /*----------------title--------------------*/
-    #index-big-pics {
-        display: none;
-    }
+    
 
     #index-vid {
         width: 100%;
@@ -644,8 +726,8 @@ button:focus {
     }
 
     #index-vid--container>video {
-        object-fit: contain;
-        object-position: center;
+        object-fit: cover;
+        object-position: top center;
     }
 
     #index-vid--container>span {
@@ -704,7 +786,6 @@ button:focus {
 
     .top-sect {
         font-size: 100%;
-        height: 20vh;
         position: fixed;
         width: 100%;
         z-index: 1000;
@@ -712,13 +793,12 @@ button:focus {
     }
 
     .pg-title {
-        margin-left: 50px;
-        color: #303030;
+        margin-left: 45px;
     }
 
     .txt-slct {
         /*background-color: yellow;*/
-        font-size: 2.2rem;
+        font-size: 50px;
     }
 
     /*-----------------nav section------------------*/
@@ -761,14 +841,14 @@ button:focus {
     .top-sect>nav>ul>li>a {
         color: #303030;
         font-weight: 600;
-        font-size: 1.1rem;
+        font-size: 18px;
         text-decoration: none;
         font-family: 'futura book';
     }
 
     nav>ul>li:hover {
-        transform: scale(1.2);
-        transition: transform .2s ease-in-out;
+        transform: scale(1.1);
+        transition: transform .1s ease-in-out;
     }
 
     .top-sect>nav>ul>li>a:visited {
@@ -777,8 +857,20 @@ button:focus {
 
     .nav-dec {
         color: transparent !important;
-        border-bottom: 2px solid #303030;
         border-spacing: 4px;
+    }
+
+    .blog-dec {
+        border-bottom: 2px solid rgb(241, 163, 176);
+    }
+
+    .gallery-dec {
+        border-bottom: 2px solid #fabd4b;
+    }
+
+    .contact-dec {
+        border-bottom: 2px solid rgb(107, 208, 248);
+
     }
 
     #ham-menu-wrapper {
@@ -789,25 +881,32 @@ button:focus {
         display: none !important;
     }
 
+    #mobile-background {
+        display: none;
+    }
+
     /*-------------gallery section---------------*/
 
-
-
+    .gallery-color {
+        background-color: #ffffff;
+        border-top: 10px solid #fabd4b;
+    }
 
 
     /*---------------*/
-
-    .bio-img {
-        padding-left: 50px;
-
+    .blog-top-sect {
+        border-top: 10px solid rgb(241, 163, 176);
     }
 
-    .bio-text {
+    .blog-text {
         margin-bottom: 60px;
     }
 
 
     /*----------------------------contact page--------------------*/
+    .contact-top-sect {
+        border-top: 10px solid rgb(107, 208, 248);
+    }
 
     .cont-contents {
         padding: 20px;
@@ -924,6 +1023,16 @@ button:focus {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes fadeInSoft{
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0.8;
     }
 }
 

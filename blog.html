@@ -12,7 +12,7 @@
 <body>
 
     <!-- TOP BAR -->
-    <div class="top-sect" id="big-pics">
+    <div class="top-sect blog-top-sect" id="big-pics">
 
         <!-- HEADER -->
         <header>
@@ -25,19 +25,18 @@
         <nav id="main-menu">
             <ul id="nav-list">
 
-                <li><a href="gallery.html">Photos</a></li>
-                <li><a href="bio.html" class="nav-dec">About</a></li>
-                <li><a href="" onclick="openSite('https://www.sumanjlama.com')">Portfolio</a></li>
+                <li><a href="gallery.html" id="gallery-link">Photos</a></li>
+                <li><a href="#" class="nav-dec blog-dec">Blog</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
-
+                <li><a href="" onclick="openSite('https://www.sumanjlama.com')" id="portfolio-link">About Me</a></li>
             </ul>
         </nav>
 
         <!-- HAM-MENU MOBILE -->
         <div id="ham-menu-wrapper" onclick="openMenu()" class="">
-            <div class="ham-menu" id="bar-1"></div>
-            <div class="ham-menu" id="bar-2"></div>
-            <div class="ham-menu" id="bar-3"></div>
+            <div class="ham-menu blog-ham-menu" id="bar-1"></div>
+            <div class="ham-menu blog-ham-menu" id="bar-2"></div>
+            <div class="ham-menu blog-ham-menu" id="bar-3"></div>
         </div>
 
         <div id="slide-in-menu" class="menu-static">
@@ -47,24 +46,24 @@
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn x2"></div>
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn-bck"></div>
             </div>
-            
+
             <ul id="mobile-menu">
                 <li><a href="gallery.html">Photos</a>
                 </li>
-                <li><a href="bio.html">About</a></li>
-                <li><a href="" onclick="openSite('https://www.sumanjlama.com')">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="" onclick="openSite('https://www.sumanjlama.com')" id="portfolio-link">About Me</a></li>
             </ul>
 
         </div>
     </div>
     <div class="fix-frame const-1">
-        <div class="bio-text">
-            <img src="images/gallery/5.jpg" alt="" class="bio-img">
+        <div class="blog-text">
+            <img src="images/gallery/5.jpg" alt="" class="blog-img">
             <section>
 
 
-                <h3>The Story:</h3>
+                <h2>The Story:</h2>
                 <br>
                 <p> In 2018, I climbed Snowdon in Snowdonia, Wales. Snowdon is the highest mountain in Wales towering at
                     1,085 metre. It is also one of the most popular landmarks in the UK and has many visitors who trek
@@ -82,7 +81,7 @@
                     extremely hard to see, but after hours of climbing the steep trek I was simply glad to reach the end
                     of the trail. I was in awe due to the sheer scale of the mountain but I was at its peak.</p>
                 <br><br>
-                <h3>The Pictures:</h3> <br>
+                <h2>The Pictures:</h2> <br>
                 <p>I wanted to capture the vast scale of the mountain and I did so by juxtaposing the hikers with the
                     environment. The photos give you a perspective of how I was seeing the environment at that time, its
                     vastness in contrast to the miniscule beings captured my imagination. The day wasn't the best for
@@ -90,17 +89,17 @@
                 </p>
                 <br>
                 <br>
-                <h3>The website:</h3>
+                <h2>The website:</h2>
                 <br>
-                <p>I created this website primarily to display my abilities in web development. I used Html to
-                    structure, CSS to beautify and vanilla JavaScript to liven it up a bit.</p>
-                <br>
-                <p>Hi, I am Suman Lama. A self-taught web designer. You can view my portfolio website through <a href=""
+
+
+                <p>I am Suman Lama. A self-taught web designer. You can view my portfolio website through <a href=""
                         onclick="openSite('https://www.sumanjlama.com')" class="a-nodec">here</a>. You can find my other
                     works by clicking this <a href="" onclick="openSite('http://sumanjlama.com/#works-section')"
                         class="a-nodec">button</a> or you can get in touch with me through this <a href=""
-                        onclick="openSite('http://sumanjlama.com/#contact-section')" class="a-nodec">button</a>.
-                </p>
+                        onclick="openSite('http://sumanjlama.com/#contact-section')" class="a-nodec">button</a>. I
+                    created this website primarily to display my abilities in web development. I used Html to
+                    structure, CSS to beautify and vanilla JavaScript to liven it up a bit.</p>
                 <br>
 
             </section>

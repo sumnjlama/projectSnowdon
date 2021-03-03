@@ -12,53 +12,52 @@
 
 <body>
 
-    <div class="top-sect" id="big-pics">
+    <div class="top-sect gallery-color" id="big-pics">
         <header>
-            <div class="pg-title" id="pg-title">
-                <span id="index-txt" class="txt-slct">Snowdon</span>
+            <div class="pg-title" id="gallery-pg-title">
+                <span id="" class="txt-slct">Snowdon</span>
             </div>
         </header>
-
+        <!-- LARGE SCREEN NAV LINKS -->
         <nav id="main-menu">
             <ul id="nav-list">
-                <li><a href="gallery.html" class="nav-dec">Photos</a></li>
-                <li><a href="bio.html">About</a></li>
-                <li><a href="" onclick="openSite('https://www.sumanjlama.com')">Portfolio</a></li>
+                <li><a href="" class="nav-dec gallery-dec">Photos</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
-
+                <li><a href="" onclick="openSite('https://www.sumanjlama.com')">About Me</a></li>
+                
             </ul>
         </nav>
 
+        <!-- SMALL/MEDIUM SCREEN NAV LINKS -->
         <div id="ham-menu-wrapper" onclick="openMenu()" class="">
-            <div class="ham-menu" id="bar-1"></div>
-            <div class="ham-menu" id="bar-2"></div>
-            <div class="ham-menu" id="bar-3"></div>
+            <div class="ham-menu gallery-ham-menu" id="bar-1"></div>
+            <div class="ham-menu gallery-ham-menu" id="bar-2"></div>
+            <div class="ham-menu gallery-ham-menu" id="bar-3"></div>
         </div>
 
         <div id="slide-in-menu" class="menu-static">
-
-
-
-
+            <!-- CLOSE BUTTON -->
             <div id="menu-close-button" onclick="closeMenu();hideClsBtn();" class="">
                 <div class="menu-close-btn x1"></div>
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn x2"></div>
                 <div onclick="closeMenu();hideClsBtn();" class="menu-close-btn-bck"></div>
             </div>
+
             <ul id="mobile-menu">
                 <li><a href="gallery.html">Photos</a>
                 </li>
-                <li><a href="bio.html">About</a></li>
-                <li><a href="" onclick="openSite('https://www.sumanjlama.com')">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="" onclick="openSite('https://www.sumanjlama.com')">About Me</a></li>
             </ul>
 
         </div>
     </div>
 
     <div class="const-1 gall-marg" id="consts">
-        <div class="gallery " id="galleryBox" onclick="">
-            <img src="images/gallery/1.jpg" class="gallery--img" alt="pic1" onclick="expandImage(this) ">
+        <div class="gallery" id="galleryBox" onclick="">
+            <img src="images/gallery/1.jpg" class="gallery--img" alt="pic1" onclick="expandImage(this)">
             <img src="images/gallery/2.jpg" class="gallery--img" alt="pic2" onclick="expandImage(this)">
             <img src="images/gallery/3.jpg" class="gallery--img" alt="pic3" onclick="expandImage(this)">
             <img src="images/gallery/4.jpg" class="gallery--img" alt="pic4" onclick="expandImage(this)">
@@ -72,9 +71,14 @@
             <img src="images/gallery/12.jpg" class="gallery--img" alt="pic12" onclick="expandImage(this)">
         </div>
     </div>
+
     <div id="expand-images" class="expand-img box-in">
+
         <div onclick="this.parentElement.style.display = 'none';
-        showTopSect();" class="close-image"><span>&times</span></div>
+        showTopSect();" class="close-image">
+        <span>&times</span>
+        </div>
+
         <img id="expandable" alt="pic missing" class="box-in">
         <button id="previouso" class="click-btns" onclick="nextImg(-1)"><span>&#8249;</span></button>
         <button id="nextso" class="click-btns" onclick="nextImg(1)"><span>&#8250;</span></button>
